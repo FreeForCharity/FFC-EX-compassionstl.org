@@ -1,6 +1,18 @@
-# Free For Charity Website
+# CompassionSTL Website
 
-Single-page Next.js 16.0.7 website built with App Router for Free For Charity nonprofit organization.
+Next.js 16 website built with App Router for **CompassionSTL** — a free, all-in-one directory of community resources in St. Louis and Missouri. The site is hosted and managed by [Free For Charity](https://freeforcharity.org) and is built on the FFC_Single_Page_Template.
+
+**Site pages:**
+
+- `/` — Home: what CompassionSTL is, resource category quick links, emergency & quick help, how to use the site
+- `/resources` — The complete categorized community resource directory
+- `/social-workers` — Free help from social workers at St. Louis County Library, plus family resources
+- `/education-career` — Education, training, and career planning resources
+- `/disclaimer` — Disclaimer and research tools
+
+Site content lives in `src/lib/site.config.ts` (branding/SEO) and `src/data/*.ts` (directory listings), rendered by the shared components in `src/components/resource-directory/`.
+
+> **Note:** The remainder of this README documents the underlying FFC template — its tooling, CI, testing, and template-usage guides — and is kept for contributors working on the repository infrastructure. Template sections describing the original single-page FFC layout (mission video, programs, donations, team, etc.) no longer apply to this site's rendered content.
 
 ## 🎉 Phase 5 Implementation Complete
 
@@ -256,7 +268,7 @@ The site features two primary CTAs accessible throughout the experience via glob
 
 ## Deployment
 
-- **Live Site**: [https://ffcworkingsite1.org](https://ffcworkingsite1.org)
+- **Live Site**: [https://compassionstl.org](https://compassionstl.org)
 - **GitHub Pages**: [https://freeforcharity.github.io/FFC_Single_Page_Template/](https://freeforcharity.github.io/FFC_Single_Page_Template/)
 - **Hosting**: GitHub Pages
 - **Deployment**: Automated via GitHub Actions on push to `main` branch
@@ -276,7 +288,7 @@ The site is live and fully functional with the following features:
 - Social media links configured (Facebook, Twitter/X, LinkedIn, GitHub)
 - Footer links fully functional with proper destinations
 - Contact information complete (email, phone, addresses)
-- Deployed to live domain: [https://ffcworkingsite1.org](https://ffcworkingsite1.org)
+- Deployed to live domain: [https://compassionstl.org](https://compassionstl.org)
 - Dual deployment: Custom domain and GitHub Pages
 
 ⚠️ **Known Limitations:**
@@ -655,7 +667,7 @@ Both platforms provide identical workflows:
 
 **Coexistence with GitHub Pages:**
 
-- Keep GitHub Pages for production (ffcworkingsite1.org)
+- Keep GitHub Pages for production (compassionstl.org)
 - Use Cloudflare Pages or Vercel for PR previews only
 - No conflicts between systems
 
@@ -826,7 +838,7 @@ The site is configured for static export and deployed to GitHub Pages:
 
 **Production:**
 
-- Live at: [https://ffcworkingsite1.org](https://ffcworkingsite1.org)
+- Live at: [https://compassionstl.org](https://compassionstl.org)
 - GitHub Pages URL: [https://freeforcharity.github.io/FFC_Single_Page_Template/](https://freeforcharity.github.io/FFC_Single_Page_Template/)
 - Deployment: Automatic via GitHub Actions (`.github/workflows/deploy.yml`)
 - Trigger: Push to `main` branch
@@ -864,7 +876,7 @@ We welcome new contributors and believe fresh perspectives are invaluable! **You
 
 #### How to Get Started
 
-1. **Explore the live site:** [https://ffcworkingsite1.org](https://ffcworkingsite1.org)
+1. **Explore the live site:** [https://compassionstl.org](https://compassionstl.org)
 2. **Test thoroughly:** Try all features, navigation, and responsive behavior
 3. **Document findings:** Create a review issue using our template
 4. **Report issues:** File separate issues for bugs and enhancements you discover

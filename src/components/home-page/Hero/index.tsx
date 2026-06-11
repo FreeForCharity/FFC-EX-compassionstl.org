@@ -1,6 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
-import { assetPath } from '@/lib/assetPath'
+import Link from 'next/link'
 
 const CharityHeroBackground = () => {
   return (
@@ -23,57 +22,41 @@ const CharityHeroBackground = () => {
         }}
       />
 
-      <div className="hero-container flex flex-col lg:flex-row gap-[40px] lg:gap-[0px] items-center justify-between relative z-10 text-white pt-[130px] w-[90%] mx-auto max-w-[1280px] lg:px-[20px]">
-        <div className="w-full lg:w-[565px]">
-          <h1
-            className="text-[50px] lg:text-[60px] font-[500] text-[#FFFFFF] leading-[120%] mb-[20px]"
-            id="faustina-font"
-          >
-            Welcome to <br /> Free For Charity
-          </h1>
-          <p
-            className="text-[24px] font-[400] leading-[120%] text-[#FFFFFF] mb-[20px]"
+      <div className="hero-container relative z-10 mx-auto w-[90%] max-w-[900px] pt-[150px] pb-[60px] text-center text-white">
+        <h1
+          className="text-[50px] lg:text-[64px] font-[500] text-[#FFFFFF] leading-[120%] mb-[20px]"
+          id="faustina-font"
+        >
+          CompassionSTL
+        </h1>
+        <p
+          className="text-[24px] font-[400] leading-[130%] text-[#FFFFFF] mb-[40px]"
+          id="lato-font"
+        >
+          Connecting you to help, hope, and a brighter future in St. Louis
+        </p>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-[12px]">
+          <Link
+            href="/resources"
+            className="w-[300px] sm:w-auto h-[54px] rounded-[27px] px-[32px] py-[18px] flex items-center justify-center gap-[10px] bg-[#FFFFFF] text-[#113563] text-[20px] font-[400] leading-[100%] whitespace-nowrap"
             id="lato-font"
           >
-            Connecting Students, Professionals, & Businesses with Charities in Need
-          </p>
-          <a
-            href="#volunteer"
-            className="top-[378px] w-[300px] lg:w-[351px] h-[54px] opacity-100 rounded-[27px] px-[32px] py-[18px] flex items-center justify-center gap-[10px] bg-[#FFFFFF] text-[#113563] text-[20px] font-[400] leading-[100%] mb-[10px] whitespace-nowrap"
+            Find Resources
+          </Link>
+          <Link
+            href="/social-workers"
+            className="w-[300px] sm:w-auto h-[54px] rounded-[27px] px-[32px] py-[18px] flex items-center justify-center gap-[10px] bg-[#FFFFFF] text-[#113563] text-[20px] font-[400] leading-[100%] whitespace-nowrap"
             id="lato-font"
           >
-            Volunteer
-          </a>
-          <div className="flex gap-[5px]">
-            <a
-              href="#donate"
-              className="top-[442px] w-[130px] lg:w-[173px] h-[54px] opacity-100 rounded-[27px] px-[32px] py-[18px] flex items-center justify-center gap-[10px] bg-[#FFFFFF] text-[#113563] text-[20px] font-[400] leading-[100%] whitespace-nowrap"
-              id="lato-font"
-            >
-              Donate
-            </a>
-            <a
-              href="#programs"
-              className="top-[442px] w-[173px] h-[54px] opacity-100 rounded-[27px] px-[32px] py-[18px] flex items-center justify-center gap-[10px] bg-[#FFFFFF] text-[#113563] text-[20px] font-[400] leading-[100%] whitespace-nowrap"
-              id="lato-font"
-            >
-              Our Programs
-            </a>
-          </div>
-        </div>
-
-        {/* Fixed right side image section */}
-        <div className="relative w-full max-w-[445px] aspect-square bg-white rounded-full p-12 flex items-center justify-center">
-          <div className="relative w-full h-full">
-            <Image
-              src={assetPath('/Images/figma-hero-img.webp')}
-              alt="Hero image"
-              fill
-              className="object-contain"
-              priority
-              sizes="(max-width: 1024px) 100vw, 445px"
-            />
-          </div>
+            Social Workers
+          </Link>
+          <Link
+            href="/education-career"
+            className="w-[300px] sm:w-auto h-[54px] rounded-[27px] px-[32px] py-[18px] flex items-center justify-center gap-[10px] bg-[#FFFFFF] text-[#113563] text-[20px] font-[400] leading-[100%] whitespace-nowrap"
+            id="lato-font"
+          >
+            Education &amp; Career
+          </Link>
         </div>
       </div>
     </div>

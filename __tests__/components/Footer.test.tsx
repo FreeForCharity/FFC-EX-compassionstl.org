@@ -13,26 +13,38 @@ describe('Footer component', () => {
     expect(footer).toBeInTheDocument()
   })
 
-  it('should display Endorsements section', () => {
+  it('should display the CompassionSTL about section', () => {
     render(<Footer />)
-    expect(screen.getByText('Endorsements')).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'CompassionSTL' })).toBeInTheDocument()
+    expect(screen.getByText(/For emergencies, call 911\./i)).toBeInTheDocument()
   })
 
   it('should display Quick Links section', () => {
     render(<Footer />)
     expect(screen.getByText('Quick Links')).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'All Resources' })).toHaveAttribute(
+      'href',
+      '/resources'
+    )
   })
 
-  it('should display Contact Us section with contact information', () => {
+  it('should display the Get Help Now section with crisis lines', () => {
     render(<Footer />)
-    expect(screen.getByText('Contact Us')).toBeInTheDocument()
+    expect(screen.getByText('Get Help Now')).toBeInTheDocument()
+    expect(screen.getByText('United Way 211')).toBeInTheDocument()
+    expect(screen.getByText('Suicide & Crisis Lifeline')).toBeInTheDocument()
   })
 
-  it('should have social media links', () => {
+  it('should display the policy links', () => {
     render(<Footer />)
-    // Check for social media links by their aria-labels or visible text
-    const links = screen.getAllByRole('link')
-    expect(links.length).toBeGreaterThan(0)
+    expect(screen.getByRole('link', { name: 'Privacy Policy' })).toHaveAttribute(
+      'href',
+      '/privacy-policy'
+    )
+    expect(screen.getByRole('link', { name: 'Vulnerability Disclosure Policy' })).toHaveAttribute(
+      'href',
+      '/vulnerability-disclosure-policy'
+    )
   })
 
   it('should display the current year in copyright', () => {
@@ -41,18 +53,11 @@ describe('Footer component', () => {
     expect(screen.getByText(new RegExp(currentYear.toString()))).toBeInTheDocument()
   })
 
-  it('should have GuideStar profile link', () => {
+  it('should have dialable tel: links for help lines', () => {
     render(<Footer />)
-    const guidestarLink = screen.getByText(/GuideStar Profile/i)
-    expect(guidestarLink).toBeInTheDocument()
-  })
-
-  it('should have email contact link', () => {
-    render(<Footer />)
-    // Look for email link
     const links = screen.getAllByRole('link')
-    const emailLink = links.find((link) => link.getAttribute('href')?.includes('mailto:'))
-    expect(emailLink).toBeDefined()
+    const telLinks = links.filter((link) => link.getAttribute('href')?.startsWith('tel:'))
+    expect(telLinks.length).toBeGreaterThanOrEqual(3)
   })
 
   it('should not have accessibility violations', async () => {
