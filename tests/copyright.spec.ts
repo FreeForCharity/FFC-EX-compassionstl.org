@@ -4,10 +4,10 @@ import { testConfig } from './test.config'
 /**
  * Copyright Notice Tests
  *
- * These tests verify that the copyright notice in the footer:
+ * These tests verify that the copyright notice in the homepage footer:
  * 1. Contains the copyright symbol (©)
  * 2. Displays the current year
- * 3. Renders the complete copyright text
+ * 3. Renders the site name
  *
  * Note: Test expectations use values from test.config.ts for easy customization
  */
@@ -29,23 +29,7 @@ test.describe('Footer Copyright Notice', () => {
     // Verify it contains the copyright symbol and current year
     await expect(footerText).toContainText(`© ${currentYear}`)
 
-    // Verify the complete copyright text is present
+    // Verify the site name is present
     await expect(footerText).toContainText(testConfig.copyright.text)
-  })
-
-  test('should display link to organization website in copyright notice', async ({ page }) => {
-    // Navigate to the homepage
-    await page.goto('/')
-
-    // Find the link within the copyright notice
-    const copyrightLink = page.locator(
-      `footer p:has-text("${testConfig.copyright.searchText}") a[href="${testConfig.copyright.linkUrl}"]`
-    )
-
-    // Verify the link is visible
-    await expect(copyrightLink).toBeVisible()
-
-    // Verify the link text
-    await expect(copyrightLink).toContainText(testConfig.copyright.linkText)
   })
 })

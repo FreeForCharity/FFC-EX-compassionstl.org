@@ -11,13 +11,8 @@ export const metadata: Metadata = {
 export default function EducationCareerPage() {
   return (
     <ResourceDirectoryPage
-      title="Education & Career"
       tagline="Plan Your Future – Education, Training & Careers"
       sections={educationCareerSections}
-    >
-      <p className="text-[17px] leading-[160%] italic" id="lato-font">
-        CompassionSTL – Empowering your future through education and career resources.
-      </p>
-    </ResourceDirectoryPage>
+    />
   )
 }

@@ -6,58 +6,45 @@ import Footer from '../../src/components/footer'
 // Extend Jest matchers
 expect.extend(toHaveNoViolations)
 
+// The footer line is chosen per pathname, matching the source site.
+const mockUsePathname = jest.fn(() => '/')
+jest.mock('next/navigation', () => ({
+  usePathname: () => mockUsePathname(),
+}))
+
 describe('Footer component', () => {
+  beforeEach(() => {
+    mockUsePathname.mockReturnValue('/')
+  })
+
   it('should render the footer', () => {
     render(<Footer />)
-    const footer = screen.getByRole('contentinfo')
-    expect(footer).toBeInTheDocument()
+    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
   })
 
-  it('should display the CompassionSTL about section', () => {
-    render(<Footer />)
-    expect(screen.getByRole('heading', { name: 'CompassionSTL' })).toBeInTheDocument()
-    expect(screen.getByText(/For emergencies, call 911\./i)).toBeInTheDocument()
-  })
-
-  it('should display Quick Links section', () => {
-    render(<Footer />)
-    expect(screen.getByText('Quick Links')).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'All Resources' })).toHaveAttribute(
-      'href',
-      '/resources'
-    )
-  })
-
-  it('should display the Get Help Now section with crisis lines', () => {
-    render(<Footer />)
-    expect(screen.getByText('Get Help Now')).toBeInTheDocument()
-    expect(screen.getByText('United Way 211')).toBeInTheDocument()
-    expect(screen.getByText('Suicide & Crisis Lifeline')).toBeInTheDocument()
-  })
-
-  it('should display the policy links', () => {
-    render(<Footer />)
-    expect(screen.getByRole('link', { name: 'Privacy Policy' })).toHaveAttribute(
-      'href',
-      '/privacy-policy'
-    )
-    expect(screen.getByRole('link', { name: 'Vulnerability Disclosure Policy' })).toHaveAttribute(
-      'href',
-      '/vulnerability-disclosure-policy'
-    )
-  })
-
-  it('should display the current year in copyright', () => {
+  it('shows the homepage line with the current year and 911 notice', () => {
     render(<Footer />)
     const currentYear = new Date().getFullYear()
-    expect(screen.getByText(new RegExp(currentYear.toString()))).toBeInTheDocument()
+    expect(screen.getByText(new RegExp(`© ${currentYear}`))).toBeInTheDocument()
+    expect(screen.getByText(/Connecting neighbors with care/)).toBeInTheDocument()
+    expect(screen.getByText(/For emergencies, call 911\./)).toBeInTheDocument()
   })
 
-  it('should have dialable tel: links for help lines', () => {
+  it.each([
+    ['/resources', /Resources compiled from community agencies/],
+    ['/social-workers', /Building a network of care/],
+    ['/education-career', /Empowering your future/],
+    ['/disclaimer', /Use information wisely/],
+  ])('shows the %s page line', (path, expected) => {
+    mockUsePathname.mockReturnValue(path)
     render(<Footer />)
-    const links = screen.getAllByRole('link')
-    const telLinks = links.filter((link) => link.getAttribute('href')?.startsWith('tel:'))
-    expect(telLinks.length).toBeGreaterThanOrEqual(3)
+    expect(screen.getByText(expected)).toBeInTheDocument()
+  })
+
+  it('falls back to the homepage line on other routes', () => {
+    mockUsePathname.mockReturnValue('/privacy-policy')
+    render(<Footer />)
+    expect(screen.getByText(/Connecting neighbors with care/)).toBeInTheDocument()
   })
 
   it('should not have accessibility violations', async () => {

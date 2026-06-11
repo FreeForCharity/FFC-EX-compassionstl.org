@@ -4,15 +4,19 @@ import Mission from '@/components/home-page/Mission'
 import ResourceCategories from '@/components/home-page/ResourceCategories'
 import EmergencyHelp from '@/components/home-page/EmergencyHelp'
 import HowToUse from '@/components/home-page/HowToUse'
+import SiteNav from '@/components/site/SiteNav'
 
 const index = () => {
   return (
-    <div>
+    <div className="cstl">
       <Hero />
-      <Mission />
-      <ResourceCategories />
-      <EmergencyHelp />
-      <HowToUse />
+      <SiteNav />
+      <div className="container" id="start">
+        <Mission />
+        <ResourceCategories />
+        <EmergencyHelp />
+        <HowToUse />
+      </div>
     </div>
   )
 }

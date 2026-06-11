@@ -11,7 +11,7 @@ export const socialWorkerSections: readonly ResourceSection[] = [
     emoji: '📋',
     title: 'Social Worker Services – St. Louis County Library',
     intro: [
-      'Social workers are available at six branches to provide free one-on-one advising and help you connect with vital resources. Assistance is available on a wide range of topics, including:',
+      'Social workers are available at six branches to provide **free one-on-one advising** and help you connect with vital resources. Assistance is available on a wide range of topics, including:',
     ],
     groups: [
       {
@@ -28,6 +28,7 @@ export const socialWorkerSections: readonly ResourceSection[] = [
         ],
       },
       {
+        paragraph: true,
         items: [
           {
             label: 'Request an appointment online:',
@@ -39,6 +40,20 @@ export const socialWorkerSections: readonly ResourceSection[] = [
             ],
           },
           { label: 'Or call:', phone: '314-994-3300', text: 'ext. 4000' },
+        ],
+      },
+      {
+        paragraph: true,
+        items: [
+          {
+            label: '',
+            text: 'Inquiries submitted through the form or left on voicemail will receive a response within three business days. Services are available at all Library locations by appointment.',
+          },
+        ],
+      },
+      {
+        paragraph: true,
+        items: [
           {
             label: 'Main Social Worker page:',
             links: [
@@ -50,9 +65,6 @@ export const socialWorkerSections: readonly ResourceSection[] = [
           },
         ],
       },
-    ],
-    outro: [
-      'Inquiries submitted through the form or left on voicemail will receive a response within three business days. Services are available at all Library locations by appointment.',
     ],
   },
   {

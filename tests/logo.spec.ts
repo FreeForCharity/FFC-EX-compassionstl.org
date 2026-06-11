@@ -2,33 +2,38 @@ import { test, expect } from '@playwright/test'
 import { testConfig } from './test.config'
 
 /**
- * Logo Visibility Tests
+ * Branding & Navigation Tests
  *
  * These tests verify that the site branding is present on the homepage:
- * the header carries a text logo that links back to the homepage.
+ * the hero carries the site name and tagline, and the sticky nav links
+ * to every page of the site.
  *
  * Note: Test expectations use values from test.config.ts for easy customization
  */
 
-test.describe('Header Logo', () => {
-  test('should display the text logo in the header', async ({ page }) => {
+test.describe('Branding and navigation', () => {
+  test('hero shows the site name and tagline', async ({ page }) => {
     await page.goto('/')
 
-    const homeLink = page.locator('header').getByRole('link', {
-      name: testConfig.logo.homeLinkName,
-    })
-
-    await expect(homeLink).toBeVisible()
-    await expect(homeLink).toContainText(testConfig.logo.text)
+    const heading = page.getByRole('heading', { level: 1, name: testConfig.branding.siteName })
+    await expect(heading).toBeVisible()
+    await expect(page.getByText(testConfig.branding.heroSubtitle)).toBeVisible()
   })
 
-  test('logo should link to the homepage', async ({ page }) => {
+  test('nav contains links to every page', async ({ page }) => {
     await page.goto('/')
 
-    const homeLink = page.locator('header').getByRole('link', {
-      name: testConfig.logo.homeLinkName,
-    })
+    const nav = page.getByRole('navigation')
+    for (const label of testConfig.branding.navLinks) {
+      await expect(nav.getByRole('link', { name: label })).toBeVisible()
+    }
+  })
 
-    await expect(homeLink).toHaveAttribute('href', '/')
+  test('interior pages show the site name header', async ({ page }) => {
+    await page.goto('/resources')
+
+    await expect(
+      page.getByRole('heading', { level: 1, name: testConfig.branding.siteName })
+    ).toBeVisible()
   })
 })

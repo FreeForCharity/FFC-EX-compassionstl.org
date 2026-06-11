@@ -626,8 +626,17 @@ export const educationCareerSections: readonly ResourceSection[] = [
     id: 'stlcc',
     emoji: '🏫',
     title: 'St. Louis Community College (STLCC)',
-    intro: ['Main Phone: 314-539-5005 | stlcc.edu'],
     groups: [
+      {
+        paragraph: true,
+        items: [
+          {
+            label: 'Main Phone:',
+            phone: '314-539-5005',
+            links: [{ text: 'stlcc.edu', href: 'https://stlcc.edu' }],
+          },
+        ],
+      },
       {
         items: [
           {

@@ -14,7 +14,7 @@ const sections: readonly ResourceSection[] = [
     emoji: '📝',
     title: 'Disclaimer',
     intro: [
-      'CompassionSTL is a free directory. We do not endorse any organization and cannot guarantee accuracy or availability. Always confirm details directly with the service provider. In an emergency, call 911.',
+      'CompassionSTL is a free directory. We do not endorse any organization and cannot guarantee accuracy or availability. **Always confirm details directly with the service provider.** In an emergency, call 911.',
     ],
     groups: [],
   },
@@ -78,14 +78,6 @@ const sections: readonly ResourceSection[] = [
 
 export default function DisclaimerPage() {
   return (
-    <ResourceDirectoryPage
-      title="Disclaimer"
-      tagline="Important Information & Research Tools"
-      sections={sections}
-    >
-      <p className="text-[17px] leading-[160%] italic" id="lato-font">
-        CompassionSTL – Use information wisely.
-      </p>
-    </ResourceDirectoryPage>
+    <ResourceDirectoryPage tagline="Important Information & Research Tools" sections={sections} />
   )
 }

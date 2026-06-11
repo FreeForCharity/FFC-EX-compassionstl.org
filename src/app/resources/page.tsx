@@ -12,23 +12,12 @@ export const metadata: Metadata = {
 export default function ResourcesPage() {
   return (
     <ResourceDirectoryPage
-      title="All Resources"
       tagline="Complete Community Resource Directory"
       sections={resourceSections}
     >
-      <p className="text-[17px] leading-[160%]" id="lato-font">
+      <p style={{ marginTop: '1.5rem' }}>
         If you need one-on-one help, contact a{' '}
-        <Link
-          href="/social-workers"
-          className="text-[#2A6682] underline underline-offset-2 hover:text-[#F57C20] transition-colors"
-        >
-          Social Worker at St. Louis County Library
-        </Link>
-        .
-      </p>
-      <p className="text-[17px] leading-[160%] italic" id="lato-font">
-        Resources compiled from community agencies. Always call ahead to confirm services. For
-        emergencies, call 911.
+        <Link href="/social-workers">Social Worker at St. Louis County Library</Link>.
       </p>
     </ResourceDirectoryPage>
   )
