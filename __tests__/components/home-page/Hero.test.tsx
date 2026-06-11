@@ -15,20 +15,9 @@ describe('Hero', () => {
     ).toBeInTheDocument()
   })
 
-  it('links to the three main sections of the site', () => {
+  it('has the Find Resources call to action pointing at the content anchor', () => {
     render(<Hero />)
-    expect(screen.getByRole('link', { name: /Find Resources/i })).toHaveAttribute(
-      'href',
-      '/resources'
-    )
-    expect(screen.getByRole('link', { name: /Social Workers/i })).toHaveAttribute(
-      'href',
-      '/social-workers'
-    )
-    expect(screen.getByRole('link', { name: /Education & Career/i })).toHaveAttribute(
-      'href',
-      '/education-career'
-    )
+    expect(screen.getByRole('link', { name: /Find Resources/i })).toHaveAttribute('href', '#start')
   })
 
   it('mounts under the #hero section landmark id', () => {

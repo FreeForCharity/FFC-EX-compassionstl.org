@@ -27,33 +27,21 @@ const categories: CategoryLink[] = [
   { emoji: '🎓', label: 'Education & College', href: '/education-career' },
 ]
 
+/** Category quick-link grid card, matching the source site's second card. */
 const ResourceCategories = () => {
   return (
-    <div id="categories" className="py-[52px]">
-      <div className="w-[90%] mx-auto max-w-[1280px]">
-        <h1
-          className="font-[400] text-[40px] lg:text-[48px] leading-[110%] tracking-[0] text-center mb-[40px]"
-          id="faustina-font"
-        >
-          Need Help Right Now? Choose a Category
-        </h1>
-        <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-[12px] list-none">
-          {categories.map((category) => (
-            <li key={category.label}>
-              <Link
-                href={category.href}
-                className="flex h-full items-center justify-center gap-2 rounded-[12px] border border-[#2A6682] bg-white px-4 py-4 text-center text-[17px] font-[600] text-[#113563] shadow-sm transition-colors hover:bg-[#2A6682] hover:text-white"
-                id="lato-font"
-              >
-                <span aria-hidden="true">{category.emoji}</span>
-                {category.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+    <div className="card" id="categories">
+      <h2>
+        <span aria-hidden="true">🔍 </span>Need Help Right Now? Choose a Category
+      </h2>
+      <div className="quick-links">
+        {categories.map((category) => (
+          <Link key={category.label} href={category.href} className="quick-link">
+            <span aria-hidden="true">{category.emoji}&nbsp;</span>
+            {category.label}
+          </Link>
+        ))}
       </div>
-
-      <div className="w-[95%] mt-[60px] mx-auto border border-[#2B627B]"></div>
     </div>
   )
 }

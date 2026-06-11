@@ -31,6 +31,11 @@ export type ResourceGroup = {
   heading?: string
   /** Decorative emoji for the subheading; hidden from screen readers. */
   emoji?: string
+  /**
+   * Render the items as one paragraph (lines separated by <br/>) instead of
+   * a bulleted list — matches the source site's <p> blocks.
+   */
+  paragraph?: boolean
   items: ResourceItem[]
 }
 
@@ -40,9 +45,12 @@ export type ResourceSection = {
   /** Decorative emoji for the heading; hidden from screen readers. */
   emoji?: string
   title: string
-  /** Paragraphs shown between the heading and the first group. */
+  /**
+   * Paragraphs shown between the heading and the first group.
+   * Supports `**bold**` spans, matching inline <strong> in the source.
+   */
   intro?: string[]
   groups: ResourceGroup[]
-  /** Paragraphs shown after the last group. */
+  /** Paragraphs shown after the last group. Supports `**bold**` spans. */
   outro?: string[]
 }

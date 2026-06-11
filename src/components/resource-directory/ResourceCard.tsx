@@ -6,17 +6,21 @@ function telHref(phone: string): string {
   return `tel:${phone.replace(/[^0-9+]/g, '')}`
 }
 
-function ResourceListItem({ item }: { item: ResourceItem }) {
+/** Render `**bold**` spans inside a paragraph string as <strong>. */
+function renderBold(text: string): React.ReactNode {
+  const parts = text.split(/\*\*([^*]+)\*\*/g)
+  if (parts.length === 1) return text
+  return parts.map((part, i) => (i % 2 === 1 ? <strong key={i}>{part}</strong> : part))
+}
+
+/** The inline content of one resource entry: bold label – phone | links (text). */
+function ItemContent({ item }: { item: ResourceItem }) {
   const hasLabel = item.label.length > 0
   const parts: React.ReactNode[] = []
 
   if (item.phone) {
     parts.push(
-      <a
-        key="phone"
-        href={telHref(item.phone)}
-        className="whitespace-nowrap font-[600] text-[#2A6682]"
-      >
+      <a key="phone" className="phone" href={telHref(item.phone)}>
         {item.phone}
       </a>
     )
@@ -28,7 +32,6 @@ function ResourceListItem({ item }: { item: ResourceItem }) {
         href={link.href}
         target={link.href.startsWith('/') ? undefined : '_blank'}
         rel={link.href.startsWith('/') ? undefined : 'noopener noreferrer'}
-        className="text-[#2A6682] underline underline-offset-2 hover:text-[#F57C20] transition-colors"
       >
         {link.text}
       </a>
@@ -36,8 +39,8 @@ function ResourceListItem({ item }: { item: ResourceItem }) {
   }
 
   return (
-    <li>
-      {hasLabel && <strong className="font-[700]">{item.label}</strong>}
+    <>
+      {hasLabel && <strong>{item.label}</strong>}
       {parts.map((part, i) => (
         <React.Fragment key={i}>
           {i === 0 ? (hasLabel ? ' – ' : '') : ' | '}
@@ -45,52 +48,60 @@ function ResourceListItem({ item }: { item: ResourceItem }) {
         </React.Fragment>
       ))}
       {item.text && <> {item.text}</>}
-    </li>
+    </>
   )
 }
 
 /**
- * One card of the resource directory: heading, optional intro paragraphs,
- * then one or more bulleted link lists with optional subheadings.
+ * One card of the resource directory, matching the source site's
+ * <div class="card"> sections: heading, optional intro paragraphs, then one
+ * or more bulleted link lists (or paragraph blocks) with optional
+ * subheadings.
  */
 export default function ResourceCard({ section }: { section: ResourceSection }) {
   return (
-    <section
-      id={section.id}
-      className="scroll-mt-[110px] rounded-[12px] border border-gray-200 bg-white p-6 shadow-sm md:p-8"
-    >
-      <h2 className="mb-4 text-[26px] leading-[120%] md:text-[30px]" id="faustina-font">
+    <div className="card" id={section.id}>
+      <h2>
         {section.emoji && <span aria-hidden="true">{section.emoji} </span>}
         {section.title}
       </h2>
 
       {section.intro?.map((paragraph, i) => (
-        <p key={i} className="mb-4 text-[17px] leading-[160%]" id="lato-font">
-          {paragraph}
-        </p>
+        <p key={i}>{renderBold(paragraph)}</p>
       ))}
 
       {section.groups.map((group, gi) => (
-        <div key={gi} className={gi > 0 ? 'mt-6' : undefined}>
+        <React.Fragment key={gi}>
           {group.heading && (
-            <h3 className="mb-3 text-[20px] font-[600] leading-[130%]" id="faustina-font">
+            <h3>
               {group.emoji && <span aria-hidden="true">{group.emoji} </span>}
               {group.heading}
             </h3>
           )}
-          <ul className="list-disc space-y-2 pl-6 text-[17px] leading-[160%]" id="lato-font">
-            {group.items.map((item, ii) => (
-              <ResourceListItem key={ii} item={item} />
-            ))}
-          </ul>
-        </div>
+          {group.paragraph ? (
+            <p>
+              {group.items.map((item, ii) => (
+                <React.Fragment key={ii}>
+                  {ii > 0 && <br />}
+                  <ItemContent item={item} />
+                </React.Fragment>
+              ))}
+            </p>
+          ) : (
+            <ul className="list-bullet">
+              {group.items.map((item, ii) => (
+                <li key={ii}>
+                  <ItemContent item={item} />
+                </li>
+              ))}
+            </ul>
+          )}
+        </React.Fragment>
       ))}
 
       {section.outro?.map((paragraph, i) => (
-        <p key={i} className="mt-4 text-[17px] leading-[160%] italic" id="lato-font">
-          {paragraph}
-        </p>
+        <p key={i}>{renderBold(paragraph)}</p>
       ))}
-    </section>
+    </div>
   )
 }

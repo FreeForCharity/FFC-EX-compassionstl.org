@@ -19,8 +19,6 @@ export const testConfig = {
   copyright: {
     text: 'CompassionSTL',
     searchText: 'Connecting neighbors with care',
-    linkUrl: 'https://freeforcharity.org',
-    linkText: 'https://freeforcharity.org',
   },
 
   /**
@@ -32,14 +30,16 @@ export const testConfig = {
   },
 
   /**
-   * Logo Configuration
+   * Branding Configuration
    * Used in: tests/logo.spec.ts
    */
-  logo: {
-    /** Accessible name of the header home link (text logo). */
-    homeLinkName: 'CompassionSTL home',
-    /** Visible text of the header logo. */
-    text: 'CompassionSTL',
+  branding: {
+    /** Site name shown in the homepage hero h1. */
+    siteName: 'CompassionSTL',
+    /** Hero tagline below the title. */
+    heroSubtitle: 'Connecting you to help, hope, and a brighter future in St. Louis',
+    /** Nav links in display order. */
+    navLinks: ['Home', 'All Resources', 'Social Workers', 'Education & Career', 'Disclaimer'],
   },
 
   /**
