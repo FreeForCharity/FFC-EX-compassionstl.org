@@ -30,16 +30,25 @@ describe('Header component', () => {
     expect(screen.getByRole('banner')).toBeInTheDocument()
   })
 
-  it('should display the Free For Charity logo', () => {
+  it('should display the CompassionSTL text logo linking home', () => {
     render(<Header />)
-    // Check for logo image with alt text
-    expect(screen.getByAltText('Free For Charity')).toBeInTheDocument()
+    const homeLink = screen.getByRole('link', { name: /CompassionSTL home/i })
+    expect(homeLink).toBeInTheDocument()
+    expect(homeLink).toHaveAttribute('href', '/')
   })
 
   it('should display Home navigation link', () => {
     render(<Header />)
     // Home link should always be present in navigation
     expect(screen.getByText('Home')).toBeInTheDocument()
+  })
+
+  it('should display the directory page links', () => {
+    render(<Header />)
+    expect(screen.getByText('All Resources')).toBeInTheDocument()
+    expect(screen.getByText('Social Workers')).toBeInTheDocument()
+    expect(screen.getByText('Education & Career')).toBeInTheDocument()
+    expect(screen.getByText('Disclaimer')).toBeInTheDocument()
   })
 
   it('should have navigation links', () => {

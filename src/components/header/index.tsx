@@ -2,41 +2,33 @@
 
 import React, { useState, useEffect, useMemo } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { FiMenu } from 'react-icons/fi'
 import { LiaSearchSolid } from 'react-icons/lia'
 import { RxCross2 } from 'react-icons/rx'
 import { motion, AnimatePresence } from 'framer-motion'
+import { siteConfig } from '@/lib/site.config'
 
 interface MenuItem {
   label: string
   path: string
 }
 
-const SCROLL_OFFSET = 100
-
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [activeSection, setActiveSection] = useState<string>('')
+  const pathname = usePathname()
 
   const menuItems: MenuItem[] = useMemo(
     () => [
-      { label: 'Home', path: '/#hero' },
-      { label: 'Mission', path: '/#mission' },
-      { label: 'Programs', path: '/#programs' },
-      { label: 'Volunteer', path: '/#volunteer' },
-      { label: 'Donate', path: '/#donate' },
-      { label: 'FAQ', path: '/#faq' },
-      { label: 'Team', path: '/#team' },
+      { label: 'Home', path: '/' },
+      { label: 'All Resources', path: '/resources' },
+      { label: 'Social Workers', path: '/social-workers' },
+      { label: 'Education & Career', path: '/education-career' },
+      { label: 'Disclaimer', path: '/disclaimer' },
     ],
     []
-  )
-
-  const sections = useMemo(
-    () =>
-      menuItems.map((item) => item.path.replace('/#', '')).filter((section) => section !== 'hero'),
-    [menuItems]
   )
 
   useEffect(() => {
@@ -45,41 +37,15 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Track active section based on scroll position
-  useEffect(() => {
-    const handleScrollSpy = () => {
-      const scrollPosition = window.scrollY + SCROLL_OFFSET
-
-      for (const sectionId of sections) {
-        const element = document.getElementById(sectionId)
-        if (element) {
-          const offsetTop = element.offsetTop
-          const offsetBottom = offsetTop + element.offsetHeight
-          if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
-            setActiveSection(sectionId)
-            return
-          }
-        }
-      }
-      // If at the top, set home as active
-      if (window.scrollY < SCROLL_OFFSET) {
-        setActiveSection('')
-      }
-    }
-
-    window.addEventListener('scroll', handleScrollSpy)
-    return () => window.removeEventListener('scroll', handleScrollSpy)
-  }, [sections])
-
   const handleSearchToggle = () => setIsSearchOpen(!isSearchOpen)
   const handleLinkClick = () => {
     setIsMobileMenuOpen(false)
   }
 
   const isActive = (path: string) => {
-    const sectionId = path.replace('/#', '')
-    if (sectionId === 'hero') return activeSection === ''
-    return activeSection === sectionId
+    if (!pathname) return false
+    if (path === '/') return pathname === '/'
+    return pathname === path || pathname.startsWith(`${path}/`)
   }
 
   return (
@@ -93,15 +59,21 @@ const Header: React.FC = () => {
         <div className="mx-auto max-w-[1080px]">
           <div className="flex items-center px-2 transition-all duration-300">
             {/* Logo */}
-            <div
-              className={`transition-all duration-300 ${isScrolled ? 'w-[110px]' : 'w-[150px]'}`}
-            >
-              <Link href="/" onClick={handleLinkClick} className="block">
-                <img
-                  src="https://freeforcharity.org/wp-content/uploads/2024/04/Screenshot_145.png"
-                  alt="Free For Charity"
-                  className={`transition-all duration-300 ${isScrolled ? 'h-7' : 'h-11'}`}
-                />
+            <div className="shrink-0">
+              <Link
+                href="/"
+                onClick={handleLinkClick}
+                className="block"
+                aria-label={`${siteConfig.name} home`}
+              >
+                <span
+                  className={`block font-[600] text-[#2A6682] whitespace-nowrap transition-all duration-300 ${
+                    isScrolled ? 'text-[20px]' : 'text-[26px]'
+                  }`}
+                  id="faustina-font"
+                >
+                  {siteConfig.name}
+                </span>
               </Link>
             </div>
 

@@ -59,32 +59,29 @@ export type SiteConfig = {
 }
 
 export const siteConfig: SiteConfig = {
-  name: 'Free For Charity',
-  tagline: 'Reduce Costs, Increase Impact',
+  name: 'CompassionSTL',
+  tagline: 'St. Louis Community Resources',
   description:
-    'Free For Charity connects students, professionals, and businesses with nonprofits to reduce costs and increase revenues—putting more resources back into their missions.',
+    'CompassionSTL is a free, all-in-one directory of community resources in St. Louis and Missouri — verified links and phone numbers for food, housing, medical care, mental health, job training, and more.',
   shortDescription:
-    'Connecting students, professionals, and businesses with nonprofits to reduce costs and increase revenues.',
-  url: 'https://ffcworkingsite1.org',
-  twitterHandle: '@freeforcharity',
+    'Connecting you to help, hope, and a brighter future in St. Louis. A free directory of community resources in St. Louis and Missouri.',
+  url: 'https://compassionstl.org',
+  twitterHandle: '',
   contactEmail: 'security@freeforcharity.org',
   keywords: [
-    'nonprofit',
-    'charity',
-    'volunteer',
-    'donate',
-    'free hosting',
-    'domains',
-    'Microsoft 365',
+    'St. Louis',
+    'Missouri',
+    'community resources',
+    'food pantry',
+    'housing assistance',
+    'mental health',
+    'job training',
+    'social workers',
+    'education',
   ],
   themeColor: '#ffffff',
   vulnerabilityDisclosurePath: '/vulnerability-disclosure-policy',
-  social: [
-    { label: 'Facebook', href: 'https://www.facebook.com/freeforcharity' },
-    { label: 'X (Twitter)', href: 'https://x.com/freeforcharity1' },
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/company/freeforcharity/' },
-    { label: 'GitHub', href: 'https://github.com/FreeForCharity/FFC_Single_Page_Template' },
-  ],
+  social: [],
 }
 
 /**

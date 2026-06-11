@@ -7,7 +7,7 @@ describe('Mission', () => {
     render(<Mission />)
     expect(
       screen.getByRole('heading', {
-        name: /Free For Charity has a simple mission with broad implications/i,
+        name: /What is CompassionSTL\?/i,
       })
     ).toBeInTheDocument()
   })
@@ -17,8 +17,11 @@ describe('Mission', () => {
     expect(container.querySelector('#mission')).not.toBeNull()
   })
 
-  it('renders the embedded mission video element', () => {
-    const { container } = render(<Mission />)
-    expect(container.querySelector('video')).not.toBeNull()
+  it('renders the list of things visitors can do', () => {
+    render(<Mission />)
+    expect(screen.getByText(/With CompassionSTL you can:/i)).toBeInTheDocument()
+    expect(
+      screen.getByText(/Find food pantries, free meals, and SNAP application help/i)
+    ).toBeInTheDocument()
   })
 })
