@@ -3,6 +3,7 @@
 **CompassionSTL** is a free, all-in-one directory of community resources in St. Louis and Missouri — verified links and phone numbers for food, housing, medical care, mental health, job training, and more, so people don't have to search dozens of websites to find help.
 
 **Live site:** [https://compassionstl.org](https://compassionstl.org)
+**Source code:** [github.com/FreeForCharity/FFC-EX-compassionstl.org](https://github.com/FreeForCharity/FFC-EX-compassionstl.org)
 
 ## Site pages
 

@@ -47,6 +47,18 @@ describe('Footer component', () => {
     expect(screen.getByText(/Connecting neighbors with care/)).toBeInTheDocument()
   })
 
+  it('links to Free For Charity and the GitHub repository', () => {
+    render(<Footer />)
+    expect(screen.getByRole('link', { name: 'Free For Charity' })).toHaveAttribute(
+      'href',
+      'https://freeforcharity.org'
+    )
+    expect(screen.getByRole('link', { name: 'Source code on GitHub' })).toHaveAttribute(
+      'href',
+      'https://github.com/FreeForCharity/FFC-EX-compassionstl.org'
+    )
+  })
+
   it('should not have accessibility violations', async () => {
     const { container } = render(<Footer />)
     const results = await axe(container)
