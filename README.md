@@ -1,6 +1,18 @@
-# Free For Charity Website
+# CompassionSTL Website
 
-Single-page Next.js 16.0.7 website built with App Router for Free For Charity nonprofit organization.
+Next.js 16 website built with App Router for **CompassionSTL** — a free, all-in-one directory of community resources in St. Louis and Missouri. The site is hosted and managed by [Free For Charity](https://freeforcharity.org) and is built on the FFC_Single_Page_Template.
+
+**Site pages:**
+
+- `/` — Home: what CompassionSTL is, resource category quick links, emergency & quick help, how to use the site
+- `/resources` — The complete categorized community resource directory
+- `/social-workers` — Free help from social workers at St. Louis County Library, plus family resources
+- `/education-career` — Education, training, and career planning resources
+- `/disclaimer` — Disclaimer and research tools
+
+Site content lives in `src/lib/site.config.ts` (branding/SEO) and `src/data/*.ts` (directory listings), rendered by the shared components in `src/components/resource-directory/`.
+
+> **Note:** The remainder of this README documents the underlying FFC template — its tooling, CI, testing, and template-usage guides — and is kept for contributors working on the repository infrastructure. Template sections describing the original single-page FFC layout (mission video, programs, donations, team, etc.) no longer apply to this site's rendered content.
 
 ## 🎉 Phase 5 Implementation Complete
 

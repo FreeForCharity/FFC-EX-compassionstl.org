@@ -976,7 +976,7 @@ export const resourceSections: readonly ResourceSection[] = [
           },
           {
             label: 'Free Diapers',
-            text: '– StL County Libraries 314-996-3300, StL City Libraries 314-241-2288, St. Charles Libraries 636-441-2300',
+            text: '– StL County Libraries 314-994-3300, StL City Libraries 314-241-2288, St. Charles Libraries 636-441-2300',
           },
         ],
       },
