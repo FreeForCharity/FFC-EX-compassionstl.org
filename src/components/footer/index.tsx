@@ -40,6 +40,20 @@ const Footer: React.FC = () => {
   return (
     <footer className="cstl-footer">
       <p>{footerContent(pathname, currentYear)}</p>
+      <p className="cstl-footer-credits">
+        Website hosted by{' '}
+        <a href="https://freeforcharity.org" target="_blank" rel="noopener noreferrer">
+          Free For Charity
+        </a>{' '}
+        |{' '}
+        <a
+          href="https://github.com/FreeForCharity/FFC-EX-compassionstl.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Source code on GitHub
+        </a>
+      </p>
     </footer>
   )
 }

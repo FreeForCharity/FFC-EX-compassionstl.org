@@ -1,8 +1,8 @@
-# Claude Code Instructions: FFC_Single_Page_Template
+# Claude Code Instructions: FFC-EX-compassionstl.org
 
-Welcome, Claude! This document provides specific instructions for working on FFC_Single_Page_Template.
+Welcome, Claude! This document provides specific instructions for working on the CompassionSTL website.
 
-**Project:** FFC_Single_Page_Template -- a Free For Charity nonprofit website
+**Project:** FFC-EX-compassionstl.org -- the CompassionSTL community resource directory (https://compassionstl.org), built on the Free For Charity single-page template and hosted by Free For Charity
 
 See **AGENTS.md** for the full project reference including architecture, commands, conventions, and security rules. This file covers what is different or specific to your capabilities as Claude Code.
 

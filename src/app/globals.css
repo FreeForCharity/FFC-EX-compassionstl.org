@@ -325,6 +325,22 @@ body {
   font-size: 0.95rem;
 }
 
+.cstl-footer-credits {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.cstl-footer a {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cstl-footer a:hover {
+  opacity: 0.85;
+}
+
 /* Responsive adjustments (from the source stylesheet) */
 @media (max-width: 768px) {
   .cstl-hero {
