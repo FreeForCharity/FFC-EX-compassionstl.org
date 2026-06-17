@@ -1,14 +1,7 @@
 {
-  "skip": [
-    "^https://github.com/(?!FreeForCharity/FFC_Single_Page_Template).*",
-    "^https://www.linkedin.com/.*",
-    "^https://twitter.com/.*",
-    "^https://www.facebook.com/.*",
-    "^https://forms.monday.com/.*",
-    "^mailto:.*",
-    "^tel:.*"
-  ],
-  "timeout": 10000,
+  "_comment": "Link check runs against a locally served copy of ./out (see the link-check job in .github/workflows/ci.yml) so extensionless routes like /resources resolve the same way GitHub Pages serves them, instead of 404ing against resources.html on the raw filesystem. External links are intentionally skipped: third-party sites going down or rate-limiting CI would make the check flaky, and validating our own pages and in-page anchors is what catches real regressions. The skip pattern excludes every URL that is not on the local server origin (http://localhost:3200).",
+  "skip": ["^(?!http://localhost:3200).*"],
+  "timeout": 15000,
   "retry": true,
   "retryErrors": true,
   "retryErrorsCount": 3,
