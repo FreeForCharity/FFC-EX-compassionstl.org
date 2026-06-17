@@ -18,66 +18,8 @@ const sections: readonly ResourceSection[] = [
     ],
     groups: [],
   },
-  {
-    id: 'research',
-    emoji: '🔎',
-    title: 'Research & Decision-Making',
-    intro: ['Use these resources to explore your options after high school:'],
-    groups: [
-      {
-        items: [
-          {
-            label: 'Missouri Dept. of Higher Education',
-            phone: '800-473-6757',
-            links: [{ text: 'dhewd.mo.gov', href: 'https://dhewd.mo.gov/' }],
-          },
-          {
-            label: 'Plan & Pay for College',
-            links: [{ text: 'dhewd.mo.gov/ppc', href: 'https://dhewd.mo.gov/ppc' }],
-          },
-          {
-            label: 'Missouri Works Initiative',
-            links: [{ text: 'moworksinitiative.org', href: 'https://moworksinitiative.org/' }],
-          },
-          {
-            label: 'StL Works',
-            links: [{ text: 'stl.works', href: 'https://stl.works/' }],
-          },
-          {
-            label: 'St. Louis Community College',
-            links: [{ text: 'stlcc.edu', href: 'https://stlcc.edu/' }],
-          },
-          {
-            label: 'Journey to College',
-            links: [
-              {
-                text: 'journeytocollege.mo.gov',
-                href: 'https://journeytocollege.mo.gov/plan/',
-              },
-            ],
-          },
-          {
-            label: 'ACT / SAT',
-            links: [
-              {
-                text: 'ACT',
-                href: 'https://www.act.org/content/act/en/products-and-services/the-act.html',
-              },
-              { text: 'SAT', href: 'https://satsuite.collegeboard.org/sat' },
-            ],
-          },
-          {
-            label: 'FAFSA',
-            links: [{ text: 'Apply', href: 'https://studentaid.gov/h/apply-for-aid/fafsa' }],
-          },
-        ],
-      },
-    ],
-  },
 ]
 
 export default function DisclaimerPage() {
-  return (
-    <ResourceDirectoryPage tagline="Important Information & Research Tools" sections={sections} />
-  )
+  return <ResourceDirectoryPage tagline="Important Information" sections={sections} />
 }
