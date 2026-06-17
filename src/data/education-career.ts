@@ -822,7 +822,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
             links: [
               {
                 text: 'Search',
-                href: 'https://www.bing.com/search?qs=AS&pq=scholarships+for+low+income+students&sk=CSYN1&sc=11-22&q=How+to+apply+niche+scholarships&cvid=c243ee6ee26247129f883c5a39d087b3&gs_lcrp=EgRlZGdlKgcIABAAGPkHMgcIABAAGPkHMgYIARBFGDkyBggCEAAYQDIGCAMQABhAMgYIBBAAGEAyBggFEAAYQDIGCAYQABhAMgYIBxAAGEAyBggIEAAYQNIBCTEwNDc2ajBqNKgCCLACAQ&FORM=ANAB01&PC=HCTS&source=chrome.ob&mturn=1',
+                href: 'https://www.bing.com/search?q=scholarships+for+low-income+students',
               },
             ],
           },

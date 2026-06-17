@@ -412,7 +412,7 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'Public Programs & Services',
             links: [
               {
-                text: 'Missouri Resource Guide',
+                text: 'labor.mo.gov/des',
                 href: 'https://labor.mo.gov/des/unemployed-workers/public-programs',
               },
             ],
@@ -432,10 +432,7 @@ export const resourceSections: readonly ResourceSection[] = [
           {
             label: 'United Way',
             phone: '211',
-            links: [
-              { text: 'Need Help?', href: 'https://svdpstlouis.org/need-help/' },
-              { text: 'How can we help?', href: 'https://search.211helps.org/' },
-            ],
+            links: [{ text: 'How can we help?', href: 'https://search.211helps.org/' }],
             text: '– Dial 2-1-1 (24/7)',
           },
           {
@@ -630,10 +627,7 @@ export const resourceSections: readonly ResourceSection[] = [
           {
             label: 'United Way',
             phone: '211',
-            links: [
-              { text: 'Need Help?', href: 'https://svdpstlouis.org/need-help/' },
-              { text: 'How can we help?', href: 'https://search.211helps.org/' },
-            ],
+            links: [{ text: 'How can we help?', href: 'https://search.211helps.org/' }],
             text: '– Dial 2-1-1 (24/7)',
           },
           {
@@ -2078,7 +2072,7 @@ export const resourceSections: readonly ResourceSection[] = [
           },
           {
             label: 'One-on-One Advising with a Social Worker',
-            phone: '314-993-3300',
+            phone: '314-994-3300',
             links: [
               {
                 text: 'Book a Social Worker | St. Louis County Library',
