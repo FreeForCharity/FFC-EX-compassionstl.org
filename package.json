@@ -10,7 +10,7 @@
     "lint": "eslint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "preview:linkcheck": "serve out -l 3200",
+    "preview:linkcheck": "npx serve out -l 3200",
     "check-links": "linkinator http://localhost:3200 --recurse --config .linkinatorrc.json",
     "test": "jest",
     "test:watch": "jest --watch",
