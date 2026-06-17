@@ -110,11 +110,16 @@ jobs:
         run: |
           npx serve out -l 3200 &
           SERVER_PID=$!
+          # Always tear the server down, whether linkinator passes, fails, or errors.
+          trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
           for i in $(seq 1 30); do
             curl -sf http://localhost:3200/ >/dev/null 2>&1 && break
             sleep 1
           done
+          # Fail with a clear message rather than letting linkinator emit a
+          # confusing connection error if the server never came up.
+          curl -sf http://localhost:3200/ >/dev/null 2>&1 || {
+            echo "::error::static server did not become reachable on :3200"
+            exit 1
+          }
           npm run check-links
-          STATUS=$?
-          kill "$SERVER_PID" 2>/dev/null || true
-          exit $STATUS
