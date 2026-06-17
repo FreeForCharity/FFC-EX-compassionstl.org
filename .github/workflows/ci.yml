@@ -17,6 +17,12 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+# Least-privilege default for the GITHUB_TOKEN: every job here only reads the
+# repo (checkout, build, test, link check) — none write contents, comment, or
+# deploy. Override per-job if a future job needs more.
+permissions:
+  contents: read
+
 jobs:
   test-and-build:
     name: Test and Build
