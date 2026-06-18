@@ -285,6 +285,107 @@ export const resourceSections: readonly ResourceSection[] = [
       {
         items: [
           {
+            label: 'Apply for Temporary Assistance',
+            phone: '855-373-4636',
+            links: [
+              {
+                text: 'mydss.mo.gov/temporary-assistance',
+                href: 'https://mydss.mo.gov/temporary-assistance/apply',
+              },
+            ],
+            text: "– Cash benefit program for low-income families to help cover costs for the household's children",
+          },
+          {
+            label: 'Assistance League of St. Louis',
+            phone: '636-227-6200',
+            links: [{ text: 'alstl.org', href: 'https://alstl.org/' }],
+            text: '– Tackling unmet community needs: Books, Clothing, Outreach, Scholarships, Support for Shelters, & items to help families through tough times',
+          },
+          {
+            label: 'Clothing Resources',
+            links: [
+              {
+                text: 'Mercy PDF',
+                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/Clothing-Resources-stl-and-counties.pdf',
+              },
+            ],
+          },
+          {
+            label: 'Community Action Agency StL County',
+            phone: '314-863-0015',
+            links: [{ text: 'caastlc.org', href: 'https://www.caastlc.org/' }],
+            text: '(Utilities, Housing, Weatherization, Reentry, Immigrants, Mental Health)',
+          },
+          {
+            label: 'Community Resources (StL County Library)',
+            links: [
+              {
+                text: 'slcl.libguides.com',
+                href: 'https://slcl.libguides.com/c.php?g=1288891',
+              },
+            ],
+          },
+          {
+            label: 'Community Services Directory (St. Louis County)',
+            links: [
+              {
+                text: 'stlouiscountymo.gov',
+                href: 'https://stlouiscountymo.gov/st-louis-county-departments/human-services/stlco-dhs-community-resource-directory/',
+              },
+            ],
+          },
+          {
+            label: 'Find Help',
+            links: [{ text: 'findhelp.org', href: 'https://www.findhelp.org/' }],
+          },
+          {
+            label: 'Free Diapers',
+            links: [
+              {
+                text: '6 St. Louis County Library Branches',
+                href: 'https://www.slcl.org/library-services/diaper-distribution',
+              },
+              {
+                text: 'St. Louis City Library Branches',
+                href: 'https://www.slpl.org/free-diaper-distribution/',
+              },
+              {
+                text: 'St. Charles Libraries (article / info)',
+                href: 'https://www.midriversnewsmagazine.com/news/st-charles-city-county-library-expands-diaper-bank-hours-locations/article_ce57fb0c-b2bf-445f-837d-df144bc8aade.html',
+              },
+            ],
+            text: '– StL County Libraries 314-994-3300, StL City Libraries (Carpenter, Central, Julia Davis) 314-241-2288, St. Charles Libraries 636-441-2300',
+          },
+          {
+            label: 'Government Related Resources',
+            links: [
+              {
+                text: 'Mercy PDF',
+                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/government-related-resources.pdf',
+              },
+            ],
+          },
+          {
+            label: 'Missouri Option Program (Graduate from High School)',
+            links: [
+              {
+                text: 'dese.mo.gov',
+                href: 'https://dese.mo.gov/quality-schools/missouri-option-program',
+              },
+            ],
+            text: '– Gain your High School Diploma, at least 17 yrs, at risk of dropping out, or not graduating w/cohort group',
+          },
+          {
+            label: 'Missouri Resources & Agency Partners',
+            links: [
+              {
+                text: 'dss.mo.gov/agency-partners',
+                href: 'https://dss.mo.gov/fsd/agency-partners~resources.htm',
+              },
+            ],
+            text: '(Blind, Cash Assistance, Child Care, Food, Utility Assistance, & more)',
+          },
+          {
             label: 'Missouri Resource Guide',
             links: [
               { text: 'mydss.mo.gov/resource-guide', href: 'https://mydss.mo.gov/resource-guide' },
@@ -292,19 +393,10 @@ export const resourceSections: readonly ResourceSection[] = [
             text: '(Food, Housing, Safety, Child Care, Health, Disability, Utility Assistance, Mental Health, Parenting, Legal, Vital Records, Unemployment, Transportation, Veterans, Reentry, Technology)',
           },
           {
-            label: 'Find Help',
-            links: [{ text: 'findhelp.org', href: 'https://www.findhelp.org/' }],
-          },
-          {
             label: 'MO Community Resources & Options (MOCOR)',
             phone: '855-834-8555',
             links: [{ text: 'mocor.mo.gov', href: 'https://mocor.mo.gov/' }],
-            text: '(Long-Term Support & Services)',
-          },
-          {
-            label: 'US Government Benefits',
-            links: [{ text: 'usa.gov/benefits', href: 'https://www.usa.gov/benefits' }],
-            text: '(Food, Health, Housing, Social Security, Utilities, Welfare)',
+            text: '– Long-Term Support',
           },
           {
             label: 'MO Resources for Low Income Families',
@@ -317,20 +409,14 @@ export const resourceSections: readonly ResourceSection[] = [
             text: '(Financial/Cash Assistance, Food, Healthcare/WIC, Housing/Utilities)',
           },
           {
-            label: 'Community Action Agency StL County',
-            phone: '314-863-0015',
-            links: [{ text: 'caastlc.org', href: 'https://www.caastlc.org/' }],
-            text: '(Utilities, Housing, Weatherization, Reentry, Immigrants, Mental Health)',
-          },
-          {
-            label: 'Missouri Resources & Agency Partners',
+            label: 'Public Programs & Services',
             links: [
               {
-                text: 'dss.mo.gov/agency-partners',
-                href: 'https://dss.mo.gov/fsd/agency-partners~resources.htm',
+                text: 'labor.mo.gov/des',
+                href: 'https://labor.mo.gov/des/unemployed-workers/public-programs',
               },
             ],
-            text: '(Comprehensive list: Blind, Cash Assistance, Child Care, Food, Utility Assistance, etc.)',
+            text: '– Meeting Your Basic Needs, Getting the Support You Need, Preparing for a Career',
           },
           {
             label: 'Social Worker Services StL County Library',
@@ -344,16 +430,15 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'United Way 2-1-1',
+            label: 'United Way',
             phone: '211',
-            links: [
-              {
-                text: 'helpingpeople.org',
-                href: 'https://helpingpeople.org/united-way-2-1-1/',
-              },
-              { text: '211.org', href: 'https://www.211.org/' },
-            ],
-            text: '(24/7)',
+            links: [{ text: 'How can we help?', href: 'https://search.211helps.org/' }],
+            text: '– Dial 2-1-1 (24/7)',
+          },
+          {
+            label: 'US Government Benefits',
+            links: [{ text: 'usa.gov/benefits', href: 'https://www.usa.gov/benefits' }],
+            text: '– Government Benefits/Financial Help, Food, Health, Housing, Social Security, Government Grants/Loans & more',
           },
         ],
       },
@@ -371,7 +456,7 @@ export const resourceSections: readonly ResourceSection[] = [
             phone: '314-622-4800',
             links: [
               {
-                text: 'stlouis-mo.gov/services',
+                text: 'Services',
                 href: 'https://www.stlouis-mo.gov/services/index.cfm',
               },
             ],
@@ -380,7 +465,7 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'St. Louis City Help Resources',
             links: [
               {
-                text: 'stlouis-mo.gov/help',
+                text: 'Help',
                 href: 'https://www.stlouis-mo.gov/live-work/community/help/index.cfm',
               },
             ],
@@ -391,7 +476,7 @@ export const resourceSections: readonly ResourceSection[] = [
             phone: '314-612-5900',
             links: [
               {
-                text: 'stlouis-mo.gov/human-services',
+                text: 'Human-Services',
                 href: 'https://www.stlouis-mo.gov/human-services/index.cfm',
               },
             ],
@@ -402,7 +487,7 @@ export const resourceSections: readonly ResourceSection[] = [
             phone: '314-615-5000',
             links: [
               {
-                text: 'stlouiscountymo.gov/find-resources',
+                text: 'Find-Resources',
                 href: 'https://stlouiscountymo.gov/st-louis-county-departments/public-health/covid-19/find-resources/',
               },
             ],
@@ -413,7 +498,7 @@ export const resourceSections: readonly ResourceSection[] = [
             phone: '314-615-4444',
             links: [
               {
-                text: 'stlouiscountymo.gov/human-services',
+                text: 'Human-Services',
                 href: 'https://stlouiscountymo.gov/st-louis-county-departments/human-services/',
               },
             ],
@@ -535,21 +620,15 @@ export const resourceSections: readonly ResourceSection[] = [
   {
     id: 'united-way',
     emoji: '💙',
-    title: 'United Way 2-1-1',
+    title: 'United Way 211',
     groups: [
       {
         items: [
           {
-            label: '',
+            label: 'United Way',
             phone: '211',
-            links: [
-              {
-                text: 'helpingpeople.org',
-                href: 'https://helpingpeople.org/united-way-2-1-1/',
-              },
-              { text: '211.org', href: 'https://www.211.org/' },
-            ],
-            text: '(Dial 211, available 24/7)',
+            links: [{ text: 'How can we help?', href: 'https://search.211helps.org/' }],
+            text: '– Dial 2-1-1 (24/7)',
           },
           {
             label: 'Emergency Assistance:',
@@ -563,6 +642,15 @@ export const resourceSections: readonly ResourceSection[] = [
           {
             label: 'Find Food Resources:',
             links: [{ text: '211.org/food', href: 'https://www.211.org/food' }],
+          },
+          {
+            label: 'Find your local United Way:',
+            links: [
+              {
+                text: 'unitedway.org/find',
+                href: 'https://www.unitedway.org/find-your-united-way',
+              },
+            ],
           },
           {
             label: 'Help Paying Bills:',
@@ -579,15 +667,6 @@ export const resourceSections: readonly ResourceSection[] = [
               {
                 text: 'mo211.myresourcedirectory.com',
                 href: 'https://mo211.myresourcedirectory.com/',
-              },
-            ],
-          },
-          {
-            label: 'Find your local United Way:',
-            links: [
-              {
-                text: 'unitedway.org/find',
-                href: 'https://www.unitedway.org/find-your-united-way',
               },
             ],
           },
@@ -645,9 +724,27 @@ export const resourceSections: readonly ResourceSection[] = [
       {
         items: [
           {
-            label: 'St. Louis Area Food Bank',
-            phone: '314-292-6262',
-            links: [{ text: 'stlfoodbank.org', href: 'https://stlfoodbank.org' }],
+            label: 'Faith Church Food Pantries',
+            links: [{ text: '4 Locations', href: 'https://faithchurch.com/' }],
+          },
+          {
+            label: 'Feed My People',
+            phone: '314-631-4900',
+            links: [
+              {
+                text: 'findhelp.org',
+                href: 'https://www.findhelp.org/provider/feed-my-people--st.-louis-mo/5845924263755776?postal=63129',
+              },
+            ],
+            text: '– 18 programs in various resource areas',
+          },
+          {
+            label: 'Fit & Food Connection',
+            phone: '314-649-7367',
+            links: [
+              { text: 'fitandfoodconnection.org', href: 'https://www.fitandfoodconnection.org/' },
+            ],
+            text: '– Food Assistance Hotline',
           },
           {
             label: 'Food Pantry Locator',
@@ -655,40 +752,6 @@ export const resourceSections: readonly ResourceSection[] = [
               {
                 text: 'Find pantries',
                 href: 'https://stlfoodbank.org/find-food/pantry-locations/',
-              },
-            ],
-          },
-          {
-            label: 'Operation Food Search',
-            phone: '314-726-5355',
-            links: [
-              {
-                text: 'operationfoodsearch.org',
-                href: 'https://www.operationfoodsearch.org',
-              },
-            ],
-          },
-          {
-            label: 'Urban League of Metro St. Louis',
-            links: [
-              {
-                text: 'Details',
-                href: 'https://www.ulstl.com/food--clothing-assistance.html#/',
-              },
-            ],
-            text: '– Food pantries (ID & proof of age required)',
-          },
-          {
-            label: 'MO Food Assistance (SNAP)',
-            links: [{ text: 'Apply for SNAP', href: 'https://mydss.mo.gov/food-assistance' }],
-          },
-          {
-            label: 'Salvation Army – St. Louis',
-            links: [
-              { text: 'City', href: 'https://www.salvationarmyusa.org/mo/saint-louis/' },
-              {
-                text: 'County',
-                href: 'https://www.google.com/search?q=salvation+army++st+louis+county+missouri',
               },
             ],
           },
@@ -706,13 +769,8 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'Food Banks & Free Meals (StL City)',
-            links: [
-              {
-                text: 'City food page',
-                href: 'https://www.stlouis-mo.gov/live-work/community/help/food.cfm',
-              },
-            ],
+            label: 'MO Food Assistance (SNAP)',
+            links: [{ text: 'Apply for SNAP', href: 'https://mydss.mo.gov/food-assistance' }],
           },
           {
             label: 'MO Food Programs',
@@ -724,11 +782,51 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
+            label: 'Operation Food Search',
+            phone: '314-726-5355',
+            links: [
+              { text: 'Find Food', href: 'https://www.operationfoodsearch.org/find-food/' },
+              {
+                text: 'operationfoodsearch.org',
+                href: 'https://www.operationfoodsearch.org/',
+              },
+              {
+                text: 'Nourishing Healthy Starts',
+                href: 'https://www.operationfoodsearch.org/nourishing-healthy-starts/',
+              },
+            ],
+            text: '– Fresh Food & Support for Expectant Mothers & Their Families',
+          },
+          {
+            label: 'Salvation Army – St. Louis',
+            links: [
+              { text: 'City', href: 'https://www.salvationarmyusa.org/mo/saint-louis/' },
+              {
+                text: 'County',
+                href: 'https://www.google.com/search?q=salvation+army++st+louis+county+missouri',
+              },
+            ],
+          },
+          {
+            label: 'St. Louis Area Food Bank',
+            phone: '314-292-6262',
+            links: [{ text: 'stlfoodbank.org', href: 'https://stlfoodbank.org/' }],
+          },
+          {
+            label: 'Urban League of Metro St. Louis Food Pantries',
+            links: [
+              {
+                text: 'Food & Clothing Assistance - ULSTL',
+                href: 'https://www.ulstl.com/food--clothing-assistance.html',
+              },
+            ],
+            text: '– City Food & Clothing 314-615-3642, County Food Assistance 314-388-9840, St. Clair County Food & Clothing 618-274-1150',
+          },
+          {
             label: 'WIC Missouri',
             phone: '314-814-8700',
-            links: [
-              { text: 'health.mo.gov/wic', href: 'https://health.mo.gov/living/families/wic/' },
-            ],
+            links: [{ text: 'WIC', href: 'https://health.mo.gov/living/families/wic/' }],
+            text: '– Special Supplemental Nutrition Program for Women, Infants, & Children',
           },
         ],
       },
@@ -742,54 +840,87 @@ export const resourceSections: readonly ResourceSection[] = [
       {
         items: [
           {
-            label: 'United Way 211 – Housing Help',
-            phone: '211',
+            label: 'Beyond Housing',
+            phone: '314-533-0600',
+            links: [{ text: 'beyondhousing.org', href: 'https://beyondhousing.org/' }],
+          },
+          {
+            label: 'Catholic Charities',
+            phone: '314-367-5500',
+            links: [{ text: 'Housing', href: 'https://ccstl.org/services/housing/' }],
+          },
+          {
+            label: 'Covenant House',
+            phone: '314-533-2241',
+            links: [{ text: 'Youth', href: 'https://www.covenanthousemo.org/' }],
+            text: '– Runaway, Trafficked, At Risk, or Homeless',
+          },
+          {
+            label: 'DePaul USA St. Louis',
+            phone: '314-349-1651',
+            links: [{ text: 'Programs', href: 'https://depaulusa.org/programs' }],
+          },
+          {
+            label: 'Gateway 180',
+            phone: '314-802-5444',
+            links: [{ text: 'Housing Resource Hotline', href: 'https://gateway180.org/' }],
+          },
+          {
+            label: 'Help for Youth',
             links: [
               {
-                text: '211.org/get-help/housing-expenses',
-                href: 'https://www.211.org/get-help/housing-expenses',
+                text: 'Site',
+                href: 'https://www.stlouis-mo.gov/live-work/community/help/youth.cfm',
+              },
+            ],
+            text: '– Housing, Education, Substance Use, Employment & more',
+          },
+          {
+            label: 'Home Sweet Home',
+            links: [
+              {
+                text: 'Partner list',
+                href: 'https://homesweethomestl.org/partner-agencies/',
+              },
+            ],
+            text: '(partner agency required) – Furniture for underserved families in St. Louis',
+          },
+          {
+            label: 'Homeless & Shelter Resources',
+            links: [
+              {
+                text: 'Mercy PDF',
+                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/homeless-and-shelter-resources.pdf',
               },
             ],
           },
           {
-            label: 'St. Louis City Affordable Housing',
-            phone: '314-657-3880',
+            label: 'Homeless Services',
+            phone: '314-657-1704',
             links: [
               {
-                text: 'Info',
-                href: 'https://www.stlouis-mo.gov/affordable-housing/index.cfm',
+                text: 'City of St. Louis',
+                href: 'https://www.stlouis-mo.gov/homeless-services/index.cfm',
               },
             ],
           },
           {
-            label: 'St. Louis Housing Authority',
-            phone: '314-531-4770',
-            links: [{ text: 'slha.org', href: 'https://www.slha.org/' }],
+            label: 'Homeless Shelter Directory',
+            links: [{ text: 'Find shelters', href: 'https://www.homelessshelterdirectory.org/' }],
           },
           {
-            label: 'St. Louis County Housing',
-            phone: '314-428-3200',
-            links: [{ text: 'countyhousing.org', href: 'https://countyhousing.org/' }],
+            label: 'Housing/Foreclosure Resources',
+            links: [
+              {
+                text: 'Mercy PDF',
+                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/housing-foreclosure-resources.pdf',
+              },
+            ],
           },
           {
             label: 'Missouri Housing Resources',
             phone: '573-751-9206',
-            links: [
-              {
-                text: 'dmh.mo.gov/housing',
-                href: 'https://dmh.mo.gov/housing/unit/housing-resources',
-              },
-            ],
-          },
-          {
-            label: 'MO Rental Assistance Program',
-            links: [{ text: 'details', href: 'https://dmh.mo.gov/housing/unit/rental-assistance' }],
-            text: '– One-time help',
-          },
-          {
-            label: 'State Assistance for Housing Relief (SAFHR)',
-            links: [{ text: 'Apply', href: 'https://safhr.smapply.org/res/p/SAFHR/' }],
-            text: '(past-due rent, forward rent, utilities)',
+            links: [{ text: 'Housing', href: 'https://dmh.mo.gov/housing/unit/housing-resources' }],
           },
           {
             label: 'MO Affordable Housing Locator',
@@ -801,8 +932,57 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'Homeless Shelter Directory',
-            links: [{ text: 'Find shelters', href: 'https://www.homelessshelterdirectory.org/' }],
+            label: 'MO Rental Assistance Program',
+            links: [{ text: 'Details', href: 'https://dmh.mo.gov/housing/unit/rental-assistance' }],
+            text: '– One-time help',
+          },
+          {
+            label: 'Peter & Paul Community Services',
+            phone: '314-588-7111',
+            links: [{ text: 'Homeless', href: 'https://ppcsinc.org/' }],
+          },
+          {
+            label: 'Room at the Inn',
+            phone: '314-209-9181',
+            links: [{ text: 'Housing', href: 'https://www.roomstl.org/' }],
+            text: '– Shelter for Families, Bridgeton, MO',
+          },
+          {
+            label: 'State Assistance for Housing Relief',
+            links: [{ text: 'Apply', href: 'https://safhr.smapply.org/res/p/SAFHR/' }],
+            text: '(past-due rent, forward rent, utilities)',
+          },
+          {
+            label: 'St. Joseph Housing Initiative',
+            phone: '314-471-0282',
+            links: [{ text: 'Housing', href: 'https://www.stjosephhousing.org/' }],
+            text: '– Affordable housing low/moderate income',
+          },
+          {
+            label: 'St. Louis City Affordable Housing',
+            phone: '314-657-3880',
+            links: [
+              { text: 'Info', href: 'https://www.stlouis-mo.gov/affordable-housing/index.cfm' },
+            ],
+          },
+          {
+            label: 'St. Louis City Warming Centers & Shelters',
+            links: [
+              {
+                text: 'stlouis-mo.gov',
+                href: 'https://www.stlouis-mo.gov/live-work/warming-centers.cfm',
+              },
+            ],
+          },
+          {
+            label: 'St. Louis County Housing',
+            phone: '314-428-3200',
+            links: [{ text: 'countyhousing.org', href: 'https://countyhousing.org/' }],
+          },
+          {
+            label: 'St. Louis Housing Authority',
+            phone: '314-531-4770',
+            links: [{ text: 'slha.org', href: 'https://www.slha.org/' }],
           },
           {
             label: 'St. Patrick Center',
@@ -811,40 +991,41 @@ export const resourceSections: readonly ResourceSection[] = [
             text: '(food, homeless, jobs, shelter)',
           },
           {
-            label: 'Gateway 180',
-            phone: '314-802-5444',
-            links: [{ text: 'gateway180.org', href: 'https://gateway180.org/' }],
-            text: '– Housing Resource Hotline',
-          },
-          {
-            label: 'DePaul USA St. Louis',
-            phone: '314-349-1651',
-            links: [{ text: 'depaulusa.org/programs', href: 'https://depaulusa.org/programs' }],
-          },
-          {
             label: 'St. Peter & Paul',
             links: [{ text: 'ppcsinc.org', href: 'https://ppcsinc.org/' }],
             text: '– Helps homeless (Dial 211 for referral)',
           },
           {
-            label: 'Home Sweet Home',
+            label: 'Supportive Housing Program',
+            phone: '314-615-4450',
             links: [
               {
-                text: 'Partner list',
-                href: 'https://homesweethomestl.org/partner-agencies/',
+                text: 'StL County',
+                href: 'https://stlouiscountymo.gov/st-louis-county-departments/human-services/supportive-housing-program/',
               },
             ],
-            text: '– Furniture (partner agency required)',
+            text: '– Homeless or having crisis. Call Emergency Shelter Hotline 314-802-4450. St. Louis City/StL County work together/help find a program',
           },
           {
-            label: 'Beyond Housing',
-            phone: '314-533-0600',
-            links: [{ text: 'beyondhousing.org', href: 'https://beyondhousing.org/' }],
+            label: 'Transitional Living & Temporary Shelter Services',
+            links: [
+              {
+                text: 'Housing',
+                href: 'https://stlcsf.org/find-a-service/temporary-shelter-and-transitional-living/',
+              },
+              { text: 'Find a Service', href: 'https://stlcsf.org/find-a-service/' },
+            ],
           },
           {
-            label: 'Mission St. Louis',
-            links: [{ text: 'missionstl.org', href: 'https://www.missionstl.org/resources' }],
-            text: '– Shelter, clothes, food, hygiene',
+            label: 'United Way 211 – Housing Help',
+            phone: '211',
+            links: [
+              {
+                text: 'Housing-Expenses',
+                href: 'https://www.211.org/get-help/housing-expenses',
+              },
+            ],
+            text: '– Immediate need of shelter',
           },
         ],
       },
@@ -858,13 +1039,51 @@ export const resourceSections: readonly ResourceSection[] = [
       {
         items: [
           {
+            label: 'Affinia Healthcare',
+            phone: '314-814-8700',
+            links: [{ text: 'affiniahealthcare.org', href: 'https://affiniahealthcare.org/' }],
+          },
+          {
             label: 'Apply for Medicaid (MO HealthNet)',
             links: [{ text: 'mydss.mo.gov/healthcare', href: 'https://mydss.mo.gov/healthcare' }],
           },
           {
-            label: 'Affinia Healthcare',
-            phone: '314-814-8700',
-            links: [{ text: 'affiniahealthcare.org', href: 'https://affiniahealthcare.org/' }],
+            label: 'Birthright (Pregnancy / Birthright Counseling)',
+            phone: '314-298-0945',
+            links: [{ text: 'birthrightstl.org', href: 'https://birthrightstl.org/' }],
+          },
+          {
+            label: 'Casa de Salud',
+            phone: '314-977-1250',
+            links: [{ text: 'casadesaludstl.org', href: 'https://www.casadesaludstl.org/' }],
+            text: '– Help for the immigrant & refugee community of St. Louis',
+          },
+          {
+            label: 'Dental Clinics (Greater St. Louis Dental Society)',
+            links: [
+              {
+                text: 'Low-Cost Dental Care',
+                href: 'https://www.greaterstlouisdentalsociety.org/for-the-public/low-cost-dental-care/dental-clinics',
+              },
+            ],
+          },
+          {
+            label: 'Dental Resources St. Louis Area',
+            links: [
+              {
+                text: 'Mercy PDF',
+                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/Dental-Resources-St-Louis.pdf',
+              },
+            ],
+          },
+          {
+            label: 'Dental Services (Locate Low-Cost)',
+            links: [
+              {
+                text: 'health.mo.gov',
+                href: 'https://health.mo.gov/living/families/oralhealth/low-cost.php',
+              },
+            ],
           },
           {
             label: 'Family Care Health Centers',
@@ -877,29 +1096,62 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'Casa de Salud',
-            phone: '314-977-1250',
-            links: [{ text: 'casadesaludstl.org', href: 'https://www.casadesaludstl.org/' }],
-          },
-          {
             label: 'Find a Health Center (Primary, Oral, Behavioral)',
             links: [{ text: 'mo-pca.org', href: 'https://mo-pca.org/find-a-health-center/' }],
           },
           {
-            label: 'MO Low-Cost Dental Services',
+            label: 'Free Clinics Near Me St. Louis MO',
+            links: [
+              { text: 'Free Clinics Near Me', href: 'https://benefitsexplorer.com/free-clinics' },
+            ],
+            text: '– Health, Dental, Vision & more',
+          },
+          {
+            label: 'Free Clinics St. Louis MO',
             links: [
               {
-                text: 'Locator',
-                href: 'https://health.mo.gov/living/families/oralhealth/low-cost.php',
+                text: 'St Louis, MO Free Clinics',
+                href: 'https://www.freeclinics.com/cit/mo-st_louis',
               },
             ],
           },
           {
-            label: 'Mercy Dental Resources',
+            label: 'Free Diapers',
+            text: '– StL County Libraries 314-996-3300, StL City Libraries 314-241-2288, St. Charles Libraries 636-441-2300',
+          },
+          {
+            label: 'Free Eye Care Service (Washington University Medicine)',
             links: [
               {
-                text: 'PDF',
-                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/Dental-Resources-St-Louis.pdf',
+                text: 'WashU Medicine Free Eye Service',
+                href: 'https://ophthalmology.wustl.edu/patient-care/washu-medicine-free-eye-service/',
+              },
+            ],
+          },
+          {
+            label: 'Health Center Services (St. Louis County)',
+            links: [
+              {
+                text: 'Services & Fees',
+                href: 'https://clinics.stlouiscountymo.gov/services-and-fees/',
+              },
+            ],
+          },
+          {
+            label: 'Health Department (City of St. Louis)',
+            links: [
+              {
+                text: 'stlouis-mo.gov',
+                href: 'https://www.stlouis-mo.gov/government/departments/health/index.cfm',
+              },
+            ],
+          },
+          {
+            label: 'Medical Equipment',
+            links: [
+              {
+                text: 'Mercy PDF',
+                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/medical-equipment-resources.pdf',
               },
             ],
           },
@@ -913,11 +1165,31 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'Medical Equipment',
+            label: 'MO Low-Cost Dental Services',
             links: [
               {
-                text: 'Mercy PDF',
-                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/medical-equipment-resources.pdf',
+                text: 'Locator',
+                href: 'https://health.mo.gov/living/families/oralhealth/low-cost.php',
+              },
+            ],
+          },
+          {
+            label: 'MO Rx Plan',
+            phone: '855-694-4663',
+            links: [
+              {
+                text: 'MO RX Plan',
+                href: 'https://mydss.mo.gov/mhd/morx-pharmacist-faqs',
+              },
+            ],
+          },
+          {
+            label: 'MO TEL-LINK (health resources)',
+            phone: '800-835-5465',
+            links: [
+              {
+                text: 'health.mo.gov/tellink',
+                href: 'https://health.mo.gov/living/families/tellink/',
               },
             ],
           },
@@ -940,29 +1212,32 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'MO Rx Plan',
-            phone: '855-694-4663',
+            label: 'Volunteers in Medicine Crossroads Clinic',
+            phone: '636-561-3133',
             links: [
-              {
-                text: 'mydss.mo.gov/mhd/morx',
-                href: 'https://mydss.mo.gov/mhd/morx-pharmacist-faqs',
-              },
+              { text: 'Crossroads Clinic - VIM', href: 'https://www.crossroadsclinicvim.org/' },
             ],
+            text: '– Serves the medical needs of western St. Charles, Warren, Lincoln and Montgomery County residents who are not covered by Medicare, Medicaid or private insurance and who live at or below 200% of the federal poverty guidelines. Free Clinic visits by appointment only.',
           },
           {
-            label: 'MO TEL-LINK (health resources)',
-            phone: '800-835-5465',
-            links: [
-              {
-                text: 'health.mo.gov/tellink',
-                href: 'https://health.mo.gov/living/families/tellink/',
-              },
-            ],
+            label: 'Volunteers in Medicine St. Charles & Lincoln Counties in MO',
+            phone: '636-724-4848',
+            links: [{ text: 'VIMSTC', href: 'https://www.volunteersinmedicinestcharles.org/' }],
           },
           {
-            label: 'Pregnancy / Birthright Counseling',
-            phone: '314-298-0945',
-            links: [{ text: 'birthrightstl.org', href: 'https://birthrightstl.org/' }],
+            label: 'Volunteers in Medicine West County Clinic',
+            phone: '636-207-5970',
+            links: [{ text: 'VIM West County Clinic', href: 'https://www.vimwestco.org/' }],
+          },
+          {
+            label: 'WIC Resources',
+            links: [
+              {
+                text: 'Mercy PDF',
+                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/wic_resources_-_st_louis_city_and_county_17.pdf',
+              },
+            ],
+            text: '– St. Louis City & County',
           },
           {
             label: "Women's Health Services (Mercy)",
@@ -973,10 +1248,6 @@ export const resourceSections: readonly ResourceSection[] = [
                 href: 'https://www.mercy.net/service/womens-health/',
               },
             ],
-          },
-          {
-            label: 'Free Diapers',
-            text: '– StL County Libraries 314-994-3300, StL City Libraries 314-241-2288, St. Charles Libraries 636-441-2300',
           },
         ],
       },
@@ -996,12 +1267,58 @@ export const resourceSections: readonly ResourceSection[] = [
             text: '– Call or text 988',
           },
           {
-            label: 'Veterans Crisis Line',
-            phone: '988',
+            label: 'BJC Behavioral Health',
             links: [
-              { text: 'veteranscrisisline.net', href: 'https://www.veteranscrisisline.net/' },
+              { text: 'bjcbehavioralhealth.org', href: 'https://www.bjcbehavioralhealth.org/' },
             ],
-            text: '– Dial 988, press 1',
+          },
+          {
+            label: 'Catholic Charities',
+            phone: '314-367-5500',
+            links: [{ text: 'Site', href: 'https://www.ccstl.org/' }],
+            text: '– Mental Health & Wellness, Addiction Recovery',
+          },
+          {
+            label: 'Crisis Care Missouri Dept. of Social Services (DSS)',
+            links: [
+              {
+                text: 'Locations',
+                href: 'https://www.findhelp.org/missouri-department-of-social-services-%2528dss%2529--st.-louis-mo--crisis-care/5479607690133504?postal=63134',
+              },
+            ],
+          },
+          {
+            label: 'Mental Health Centers & Crisis Hotlines (StL County)',
+            links: [
+              {
+                text: 'List',
+                href: 'https://stlouiscountymo.gov/st-louis-county-departments/public-health/substance-use-resources/general-resources/mental-health-centers-and-crisis-lifelines/',
+              },
+              { text: 'Contact Us', href: 'https://dss.mo.gov/dss_map/' },
+            ],
+          },
+          {
+            label: 'Mental Health Resources for Self-Care',
+            links: [
+              {
+                text: 'Self-Care Resources',
+                href: 'https://www.stlouis-mo.gov/government/departments/health/behavioral-health/self-care-resources.cfm',
+              },
+            ],
+          },
+          {
+            label: 'Mercy Mental Health Resources',
+            links: [
+              {
+                text: 'PDF',
+                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/mental-health-resources-in-st-louis.pdf',
+              },
+            ],
+          },
+          {
+            label: 'Missouri Dept. of Mental Health',
+            phone: '800-364-9687',
+            links: [{ text: 'dmh.mo.gov', href: 'https://dmh.mo.gov/' }],
           },
           {
             label: 'Missouri Mental Health Hotline',
@@ -1010,29 +1327,6 @@ export const resourceSections: readonly ResourceSection[] = [
               {
                 text: 'mentalhealthhotline.org/missouri',
                 href: 'https://mentalhealthhotline.org/missouri/',
-              },
-            ],
-          },
-          {
-            label: 'BJC Behavioral Health',
-            links: [
-              {
-                text: 'bjcbehavioralhealth.org',
-                href: 'https://www.bjcbehavioralhealth.org',
-              },
-            ],
-          },
-          {
-            label: 'MO Dept. of Mental Health',
-            phone: '800-364-9687',
-            links: [{ text: 'dmh.mo.gov', href: 'https://dmh.mo.gov' }],
-          },
-          {
-            label: 'Mental Health Centers & Crisis Hotlines (StL County)',
-            links: [
-              {
-                text: 'List',
-                href: 'https://stlouiscountymo.gov/st-louis-county-departments/public-health/substance-use-resources/general-resources/mental-health-centers-and-crisis-lifelines/',
               },
             ],
           },
@@ -1047,13 +1341,21 @@ export const resourceSections: readonly ResourceSection[] = [
             text: '– Youth crisis help',
           },
           {
-            label: 'Mercy Mental Health Resources',
+            label: 'Substance Use Resources',
             links: [
               {
-                text: 'PDF',
-                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/mental-health-resources-in-st-louis.pdf',
+                text: 'Mercy PDF',
+                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/substance-use-resources.pdf',
               },
             ],
+          },
+          {
+            label: 'Veterans Crisis Line',
+            phone: '988',
+            links: [
+              { text: 'veteranscrisisline.net', href: 'https://www.veteranscrisisline.net/' },
+            ],
+            text: '– Dial 988, press 1',
           },
         ],
       },
@@ -1067,13 +1369,17 @@ export const resourceSections: readonly ResourceSection[] = [
       {
         items: [
           {
-            label: 'LIHEAP (Low Income Energy Assistance)',
+            label: 'Ameren Clean Slate',
             links: [
-              {
-                text: 'mydss.mo.gov/utility-assistance',
-                href: 'https://mydss.mo.gov/utility-assistance',
-              },
+              { text: 'Clean Slate', href: 'https://www.ameren.com/bill/assistance/clean-slate' },
             ],
+            text: '– For gas customers who have past due accounts',
+          },
+          {
+            label: 'Community Action Agency StL County',
+            phone: '314-863-0015',
+            links: [{ text: 'caastlc.org', href: 'https://www.caastlc.org/' }],
+            text: '(Utilities, Housing, Weatherization, Reentry, Immigrants, Mental Health)',
           },
           {
             label: 'Dial 211 – Utility Help',
@@ -1081,15 +1387,6 @@ export const resourceSections: readonly ResourceSection[] = [
               {
                 text: '211.org/get-help/utilities-expenses',
                 href: 'https://www.211.org/get-help/utilities-expenses',
-              },
-            ],
-          },
-          {
-            label: 'Weatherization Assistance',
-            links: [
-              {
-                text: 'dnr.mo.gov/energy/weatherization',
-                href: 'https://dnr.mo.gov/energy/weatherization',
               },
             ],
           },
@@ -1103,6 +1400,30 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
+            label: "Father Bob's Outreach",
+            phone: '314-385-1934',
+            links: [{ text: "Father Bob's Outreach", href: 'https://www.fatherbobsoutreach.com/' }],
+            text: '(St Augustine Parish, Mon-Wed-Fri, bring $25, ID, utility bill/rental agreement, first 30 at 6am)',
+          },
+          {
+            label: 'Find Community Action Agencies',
+            links: [
+              {
+                text: 'Get Help - Missouri Community Action Network',
+                href: 'https://www.communityaction.org/get-help.html',
+              },
+            ],
+          },
+          {
+            label: 'Get Help Paying Bills & Rent',
+            links: [
+              {
+                text: 'Help for Renters',
+                href: 'https://www.consumerfinance.gov/housing/housing-insecurity/help-for-renters/get-help-paying-rent-and-bills/',
+              },
+            ],
+          },
+          {
             label: 'LIHEAP Clearinghouse (all utilities)',
             links: [
               {
@@ -1112,39 +1433,57 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'Mercy Utility & Rent Assistance',
+            label: 'LIHEAP (Low Income Energy Assistance)',
             links: [
               {
-                text: 'PDF',
-                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/utility-and-rent-assistance-st-louis-city-and-county.pdf',
+                text: 'mydss.mo.gov/utility-assistance',
+                href: 'https://mydss.mo.gov/utility-assistance',
               },
             ],
           },
           {
-            label: 'Mercy Sewer Assistance',
+            label: 'Missouri Financial Help Directory',
             links: [
               {
-                text: 'PDF',
+                text: 'Directory',
+                href: 'https://www.oacra.com/find-services/missouri-financial-help',
+              },
+            ],
+            text: '– Financial Assist, Emergency aid, Rent, Utility, Reentry',
+          },
+          {
+            label: 'Rental Assistance Program',
+            links: [
+              {
+                text: 'Missouri Dept. of Mental Health',
+                href: 'https://dmh.mo.gov/housing/unit/rental-assistance',
+              },
+            ],
+          },
+          {
+            label: 'Sewer Assistance',
+            links: [
+              {
+                text: 'Mercy PDF',
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/sewer-assistance-resource.pdf',
               },
             ],
           },
           {
-            label: 'Community Action Agency StL County',
-            phone: '314-863-0015',
-            links: [{ text: 'caastlc.org', href: 'https://www.caastlc.org/' }],
-          },
-          {
-            label: "Father Bob's Outreach",
-            phone: '314-385-1934',
-            text: '(St Augustine Parish, Mon-Wed-Fri, bring $25, ID, utility bill/rental agreement, first 30 at 6am)',
-          },
-          {
-            label: 'Local Agencies in MO (communityaction.org)',
+            label: 'Utility & Rent Assistance',
             links: [
               {
-                text: 'Find agencies',
-                href: 'https://www.communityaction.org/missouri-agencies/',
+                text: 'Mercy PDF',
+                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/utility-and-rent-assistance-st-louis-city-and-county.pdf',
+              },
+            ],
+          },
+          {
+            label: 'Weatherization Assistance',
+            links: [
+              {
+                text: 'Missouri Dept. of Natural Resources',
+                href: 'https://dnr.mo.gov/energy/weatherization',
               },
             ],
           },
@@ -1158,18 +1497,43 @@ export const resourceSections: readonly ResourceSection[] = [
     title: 'Jobs, Education & Training',
     groups: [
       {
+        heading: 'Job Openings',
         items: [
           {
-            label: 'Missouri Job Centers',
-            links: [{ text: 'Find locations', href: 'https://jobs.mo.gov/job-centers' }],
-            text: '– SLATE: 314-589-8000, Ferguson: 314-244-8020, St. Louis County: 314-377-0445',
-          },
-          {
-            label: 'MoJobs',
+            label: 'AARP Jobs Search',
             links: [
               {
-                text: 'app-jobs.mo.gov',
-                href: 'https://app-jobs.mo.gov/vosnet/Default.aspx',
+                text: 'Job Search - Tools and Resources',
+                href: 'https://www.aarp.org/work/job-search/',
+              },
+            ],
+            text: '– To help you find a job at 50+',
+          },
+          {
+            label: 'Catholic Charities Workforce',
+            phone: '314-377-0495',
+            links: [
+              {
+                text: 'Workforce Development',
+                href: 'https://ccstl.org/services/workforce-development/',
+              },
+            ],
+          },
+          {
+            label: 'City of St. Louis Jobs Board',
+            links: [
+              {
+                text: 'Current Job Openings',
+                href: 'https://www.stlouis-mo.gov/government/departments/personnel/jobs/openings/index.cfm',
+              },
+            ],
+          },
+          {
+            label: 'Employment & Training Resources',
+            links: [
+              {
+                text: 'Mercy PDF',
+                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/Employment-and-Training-Resources.pdf',
               },
             ],
           },
@@ -1178,28 +1542,112 @@ export const resourceSections: readonly ResourceSection[] = [
             phone: '314-333-5627',
             links: [
               {
-                text: 'employmentstl.org/job-seekers',
+                text: 'Job-Seekers',
                 href: 'https://www.employmentstl.org/job-seekers',
               },
             ],
           },
           {
-            label: 'Urban League Employment',
+            label: 'Indeed, St. Louis MO',
             links: [
               {
-                text: 'ulstl.com/employment',
-                href: 'https://www.ulstl.com/employment-services.html#/',
+                text: 'Jobs in St. Louis, MO',
+                href: 'https://www.indeed.com/l-St.-Louis,-MO-jobs.html',
               },
             ],
           },
           {
-            label: 'Catholic Charities Workforce',
+            label: 'Job Center (City) SLATE',
+            phone: '314-589-8000',
             links: [
               {
-                text: 'ccstl.org/workforce',
-                href: 'https://ccstl.org/services/workforce-development',
+                text: 'SLATE',
+                href: 'https://jobs.mo.gov/job-centers/st-louis-city-slate-job-center',
               },
             ],
+            text: '– 1520 Market St, Suite 3050, St. Louis, MO 63103',
+          },
+          {
+            label: 'Job Center (County) Ferguson',
+            phone: '314-244-8020',
+            links: [
+              {
+                text: 'Ferguson',
+                href: 'https://jobs.mo.gov/job-centers/st-louis-county-ferguson-job-center',
+              },
+            ],
+            text: '– 2900 Pershall Rd, Suite 166, St. Louis, MO 63136',
+          },
+          {
+            label: 'Job Center MET Center',
+            phone: '314-377-0445',
+            links: [
+              {
+                text: 'MET Center',
+                href: 'https://jobs.mo.gov/job-centers/st-louis-county-job-center-met-center',
+              },
+              {
+                text: 'Industrial certification programs',
+                href: 'https://stl.works/resources/met-center-industrial-certification-program/',
+              },
+            ],
+          },
+          {
+            label: 'Job Centers Missouri',
+            links: [
+              { text: 'Find a location', href: 'https://jobs.mo.gov/job-centers' },
+              { text: 'Request Job Center Services', href: 'https://jobs.mo.gov/' },
+            ],
+          },
+          {
+            label: 'Job Help & Career Building',
+            links: [
+              {
+                text: 'St. Louis County Library',
+                href: 'https://www.slcl.org/research-learn/job-help-career-building',
+              },
+            ],
+          },
+          {
+            label: 'Job Search Guide',
+            links: [{ text: 'StL County Library', href: 'https://slcl.libguides.com/jobs' }],
+          },
+          {
+            label: 'Jobs',
+            links: [{ text: 'St. Louis Post-Dispatch', href: 'https://jobs.stltoday.com/' }],
+          },
+          {
+            label: 'Mercy Employment & Training',
+            links: [
+              {
+                text: 'PDF',
+                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/Employment-and-Training-Resources.pdf',
+              },
+            ],
+          },
+          {
+            label: 'Missouri Occupational Projections',
+            links: [
+              {
+                text: 'meric.mo.gov',
+                href: 'https://meric.mo.gov/data/occupation/occupational-projections',
+              },
+            ],
+          },
+          {
+            label: 'MoJobs',
+            phone: '866-506-0251',
+            links: [
+              {
+                text: "Missouri's Job Search Resource",
+                href: 'https://app-jobs.mo.gov/vosnet/Default.aspx',
+              },
+            ],
+            text: '– Call for Immediate Assistance',
+          },
+          {
+            label: 'Occupational Outlook Handbook: Occupation Finder',
+            links: [{ text: 'bls.gov', href: 'https://www.bls.gov/ooh/occupation-finder.htm' }],
           },
           {
             label: 'St. Louis City Employment Help',
@@ -1212,11 +1660,159 @@ export const resourceSections: readonly ResourceSection[] = [
           },
           {
             label: 'St. Louis County Workforce',
-            links: [{ text: 'stlcowd.org', href: 'https://www.stlcowd.org/' }],
+            links: [
+              { text: 'Your Next Step', href: 'https://www.stlcowd.org/' },
+              {
+                text: 'St. Louis County, Missouri Careers',
+                href: 'https://www.governmentjobs.com/careers/stlouis',
+              },
+            ],
+          },
+          {
+            label: 'St. Louis Jobs Line',
+            links: [
+              { text: 'Find Jobs in St Louis, MO', href: 'https://www.stlouisjobsline.com/' },
+            ],
+          },
+          {
+            label: 'Urban League Employment',
+            links: [
+              {
+                text: 'Employment Services - ULSTL',
+                href: 'https://www.ulstl.com/employment-services.html',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        heading: 'Education & Training Programs',
+        items: [
+          {
+            label: 'Apprenticeship USA',
+            links: [{ text: 'Apprenticeship.gov', href: 'https://www.apprenticeship.gov/' }],
+          },
+          {
+            label: 'Apprenticeships Missouri',
+            links: [
+              {
+                text: 'Missouri Registered Apprenticeships',
+                href: 'https://jobs.mo.gov/moapprenticeships',
+              },
+            ],
           },
           {
             label: 'CareerOneStop',
-            links: [{ text: 'careeronestop.org', href: 'https://www.careeronestop.org/' }],
+            links: [
+              {
+                text: 'Career Exploration, Training, & Jobs',
+                href: 'https://www.careeronestop.org/',
+              },
+            ],
+          },
+          {
+            label: 'Construction Cooperative',
+            phone: '314-880-2063',
+            links: [
+              {
+                text: 'Saint Louis Construction Cooperative',
+                href: 'https://stlouisconstructioncooperative.org/',
+              },
+            ],
+          },
+          {
+            label: 'Job Corps (ages 18-24)',
+            phone: '800-733-5627',
+            links: [{ text: 'Job Corps | St. Louis', href: 'https://stlouis.jobcorps.gov/' }],
+            text: '– Many training programs',
+          },
+          {
+            label: 'LaunchCode',
+            phone: '314-254-0107',
+            links: [
+              {
+                text: 'Building an AI-ready workforce',
+                href: 'https://www.launchcode.org/',
+              },
+            ],
+            text: '– Free education/job placement info-tech',
+          },
+          {
+            label: 'List of Accredited Nursing Schools in Missouri',
+            links: [
+              {
+                text: 'List',
+                href: 'https://www.nursingschoolsalmanac.com/articles/list-accredited-nursing-schools-missouri',
+              },
+            ],
+          },
+          {
+            label: 'List of Trades Careers',
+            links: [{ text: 'List', href: 'https://bluecollarbrain.com/list-of-skilled-trades/' }],
+            text: '– Salary, Outlook, Job Skills, Location of Training Programs',
+          },
+          {
+            label: 'MET Center',
+            phone: '314-377-0445',
+            links: [{ text: 'STL.works', href: 'https://stl.works/' }],
+            text: '– Find St. Louis Jobs That Pay Well Without a Degree',
+          },
+          {
+            label: 'Missouri Dept. of Higher Education Institutions',
+            links: [
+              {
+                text: 'Find Schools & Programs that Interest You',
+                href: 'https://dhewd.mo.gov/mo-higher-education-institutions',
+              },
+            ],
+          },
+          {
+            label: 'Missouri Training & Education Beyond High School',
+            links: [
+              {
+                text: 'Training and Education | JobsMoGov',
+                href: 'https://jobs.mo.gov/jobseeker/training-and-education',
+              },
+            ],
+          },
+          {
+            label: 'Missouri Work Assistance Program',
+            phone: '855-373-4636',
+            links: [
+              {
+                text: 'Missouri Work Assistance Program',
+                href: 'https://mydss.mo.gov/missouri-work-assistance-program',
+              },
+              {
+                text: 'Temporary Assistance',
+                href: 'https://www.missouriworkassistancestl.net/contact',
+              },
+            ],
+            text: '– Helps recipients become job ready (for St. Louis families 314-746-0800), gain work experience, & secure/keep employment',
+          },
+          {
+            label: 'Missouri Works Initiative',
+            phone: '573-536-2237',
+            links: [
+              {
+                text: 'Economic & Job Opportunities',
+                href: 'https://moworksinitiative.org/',
+              },
+              {
+                text: 'Program Application',
+                href: 'https://moworks.powerappsportals.com/Program-Application/',
+              },
+            ],
+            text: '– Apprenticeship Ready Programs (Construction & Manufacturing), Dislocated Worker Program',
+          },
+          {
+            label: 'MOScores',
+            links: [
+              {
+                text: 'Education & Program Training Search',
+                href: 'https://meric.mo.gov/data/moscores',
+              },
+            ],
           },
           {
             label: 'National Career Readiness Certificate',
@@ -1228,31 +1824,66 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'Apprenticeship USA',
-            links: [{ text: 'apprenticeship.gov', href: 'https://www.apprenticeship.gov/' }],
+            label: 'On-the-Job Training (OJT)',
+            links: [{ text: 'OJT', href: 'https://jobs.mo.gov/jobseeker/ojt' }],
           },
           {
-            label: 'MO Apprenticeships',
+            label: 'Practical Nursing Program',
+            links: [
+              { text: 'appliedtech.edu', href: 'https://appliedtech.edu/' },
+              { text: 'Locations', href: 'https://appliedtech.edu/locations/' },
+            ],
+            text: '– North Tech 314-989-7676, South Tech 314-989-7570',
+          },
+          {
+            label: 'St. Louis College of Health Careers',
+            phone: '636-529-0000',
+            links: [{ text: 'StL College', href: 'https://slchc.edu/' }],
+          },
+          {
+            label: 'St. Louis Community College',
+            phone: '314-539-5151',
+            links: [
+              { text: 'All Programs', href: 'https://stlcc.edu/programs/' },
+              {
+                text: 'Career & Technical Education Programs',
+                href: 'https://stlcc.edu/programs-academics/pathways/career-and-technical-education/',
+              },
+              {
+                text: 'Short-Term Career Training',
+                href: 'https://stlcc.edu/workforce/training-programs/',
+              },
+              {
+                text: 'Skilled Trades Program',
+                href: 'https://stlcc.edu/pathways/industrial/skilled-trades/',
+              },
+            ],
+            text: '– Carpentry, Electrical Systems, Programmable Logic Controllers (PLC) & Robotics, Sheet Metal, Manufacturing Assembly & Production. Work Counseling – Call 314-539-5151 to make an appointment',
+          },
+          {
+            label: 'Stl.works',
             links: [
               {
-                text: 'jobs.mo.gov/moapprenticeships',
-                href: 'https://jobs.mo.gov/moapprenticeships',
+                text: 'Find St. Louis Jobs That Pay Well Without a Degree',
+                href: 'https://stl.works/',
               },
             ],
           },
           {
-            label: 'On-the-Job Training (OJT)',
-            links: [{ text: 'jobs.mo.gov/ojt', href: 'https://jobs.mo.gov/jobseeker/ojt' }],
+            label: 'Ticket to Work (SSI/SSD)',
+            phone: '314-621-6300',
+            links: [{ text: 'ssa.gov/work', href: 'https://www.ssa.gov/work/' }],
+            text: '– 18 – 64, & receive Social Security Disability & want to work',
           },
           {
-            label: 'Job Corps (ages 18-24)',
-            phone: '800-733-5627',
-            links: [{ text: 'stlouis.jobcorps.gov', href: 'https://stlouis.jobcorps.gov/' }],
-          },
-          {
-            label: 'MET Center',
-            phone: '314-377-0445',
-            links: [{ text: 'stl.works', href: 'https://stl.works/' }],
+            label: 'Vocational Rehabilitation',
+            links: [
+              {
+                text: 'VR',
+                href: 'https://dese.mo.gov/adult-learning-rehabilitation-services/vocational-rehabilitation',
+              },
+            ],
+            text: '(Downtown 877-2940, North 475-7999, South 877-1900, West 587-4877) – We can help you if you have a disability & want to work. If you are a student with a disability we can help you prepare for the future',
           },
           {
             label: 'YouthBuild StL City',
@@ -1268,30 +1899,6 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'YouthBuild StL County',
             phone: '314-261-0202',
             links: [{ text: 'Info', href: 'https://www.cap4kids.org/stlouis/405180330/' }],
-          },
-          {
-            label: 'Ticket to Work (SSI/SSD)',
-            phone: '314-621-6300',
-            links: [{ text: 'ssa.gov/work', href: 'https://www.ssa.gov/work/' }],
-          },
-          {
-            label: 'Vocational Rehabilitation',
-            links: [
-              {
-                text: 'dese.mo.gov/vr',
-                href: 'https://dese.mo.gov/adult-learning-rehabilitation-services/vocational-rehabilitation',
-              },
-            ],
-            text: '(Downtown 877-2940, North 475-7999, South 877-1900, West 587-4877)',
-          },
-          {
-            label: 'Veteran & Military Transition Center',
-            links: [
-              {
-                text: 'careeronestop.org/veterans',
-                href: 'https://www.careeronestop.org/veterans/',
-              },
-            ],
           },
         ],
       },
@@ -1352,33 +1959,56 @@ export const resourceSections: readonly ResourceSection[] = [
             links: [{ text: 'va.gov', href: 'https://www.va.gov/' }],
           },
           {
+            label: 'How to Apply for the GI Bill & Related Benefits',
+            links: [{ text: 'Apply', href: 'https://www.va.gov/education/how-to-apply/' }],
+          },
+          {
             label: 'MO Veterans Benefits',
             phone: '573-751-3779',
-            links: [{ text: 'veteranbenefits.mo.gov', href: 'https://veteranbenefits.mo.gov/' }],
+            links: [
+              {
+                text: 'Benefits & Resources Guide',
+                href: 'https://veteranbenefits.mo.gov/',
+              },
+            ],
+          },
+          {
+            label: 'National Resource Directory',
+            links: [{ text: 'NRD', href: 'https://nrd.gov/' }],
           },
           {
             label: 'Veteran & Military Transition Center',
             links: [{ text: 'CareerOneStop', href: 'https://www.careeronestop.org/veterans/' }],
           },
           {
-            label: 'Veterans Resources (StL County Library)',
-            links: [
-              {
-                text: 'slcl.libguides.com',
-                href: 'https://slcl.libguides.com/c.php?g=1288891&p=9480799',
-              },
-            ],
-          },
-          {
             label: 'Veteran Disability Portal',
             phone: '800-877-8249',
             links: [
               {
-                text: 'disability.mo.gov/veterans',
+                text: 'Disability Portal',
                 href: 'https://disability.mo.gov/veterans-information.htm',
               },
             ],
             text: '(v/tty)',
+          },
+          {
+            label: 'Veterans Education Missouri',
+            links: [
+              {
+                text: 'Veterans Education',
+                href: 'https://dese.mo.gov/adult-learning-rehabilitation-services/veterans-education',
+              },
+            ],
+            text: '– Contacts & Phone Numbers',
+          },
+          {
+            label: 'Veterans Resources',
+            links: [
+              {
+                text: 'StL County Library',
+                href: 'https://slcl.libguides.com/c.php?g=1288891&p=9480799',
+              },
+            ],
           },
         ],
       },
@@ -1402,9 +2032,35 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'Criminal Justice Ministry',
-            links: [{ text: 'cjmstlouis.org', href: 'https://www.cjmstlouis.org/' }],
-            text: '(bus pass, food, housing, jobs)',
+            label: 'Ex-Offender Resources',
+            links: [
+              {
+                text: 'Mercy PDF',
+                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/ex-offender-resources.pdf',
+              },
+            ],
+          },
+          {
+            label: 'Find Reentry Programs (by State)',
+            links: [{ text: 'Reentry Programs', href: 'https://www.reentryprograms.com/' }],
+          },
+          {
+            label: 'Justice-Impacted Job Seekers',
+            links: [
+              {
+                text: 'CareerOneStop',
+                href: 'https://www.careeronestop.org/JusticeImpacted/default.aspx',
+              },
+            ],
+          },
+          {
+            label: 'Missouri Reentry Process (MRP)',
+            links: [
+              {
+                text: 'MRP',
+                href: 'https://doc.mo.gov/programs/missouri-reentry-process',
+              },
+            ],
           },
           {
             label: 'MO Dept. of Corrections Reentry',
@@ -1416,26 +2072,25 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'Missouri Reentry Process (MRP)',
+            label: 'One-on-One Advising with a Social Worker',
+            phone: '314-993-3300',
             links: [
               {
-                text: 'doc.mo.gov',
-                href: 'https://doc.mo.gov/programs/missouri-reentry-process',
+                text: 'Book a Social Worker | St. Louis County Library',
+                href: 'https://www.slcl.org/library-services/social-workers/book-a-social-worker',
               },
             ],
+            text: '– or request appointment on-line',
           },
           {
-            label: 'Find Reentry Programs (by State)',
-            links: [{ text: 'reentryprograms.com', href: 'https://www.reentryprograms.com/' }],
+            label: 'Reentry St. Louis',
+            phone: '314-200-5211',
+            links: [{ text: 'Getting out of prison', href: 'https://www.restl.org/' }],
           },
           {
-            label: 'Justice-Impacted Job Seekers',
-            links: [
-              {
-                text: 'CareerOneStop',
-                href: 'https://www.careeronestop.org/JusticeImpacted/default.aspx',
-              },
-            ],
+            label: 'St. Louis Alliance for Reentry',
+            phone: '314-534-0055',
+            links: [{ text: 'STL Reentry', href: 'https://stlarchs.org/stl-reentry/' }],
           },
         ],
       },
@@ -1449,34 +2104,58 @@ export const resourceSections: readonly ResourceSection[] = [
       {
         items: [
           {
+            label: 'Child & Crisis Care Resources',
+            links: [
+              {
+                text: 'Mercy PDF',
+                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/child-and-crisis-care-resources-st-louis-and-surrounding-areas.pdf',
+              },
+            ],
+            text: '– St. Louis & Surrounding Areas',
+          },
+          {
             label: 'Child Care Aware of Missouri',
             links: [
               {
-                text: 'mochildcareaware.org',
+                text: 'State Assistance Resources',
                 href: 'https://mochildcareaware.org/cckmw-state-assistance/',
               },
             ],
+          },
+          {
+            label: 'Child Care & Helpful Resources',
+            links: [{ text: 'childcare.gov', href: 'https://childcare.gov/' }],
+          },
+          {
+            label: 'Crisis Care Help for Families',
+            links: [
+              {
+                text: 'Crisis Care Locations & Phone Numbers',
+                href: 'https://dss.mo.gov/cd/child-care/help-for-families/crisis-help-for-families.htm',
+              },
+            ],
+            text: '– Temporary care for children birth to 18yrs: City 314-340-7007, StL County 314-264-7700',
           },
           {
             label: "Missouri's Early Care & Education Connections",
             links: [{ text: 'earlyconnections.mo.gov', href: 'https://earlyconnections.mo.gov/' }],
           },
           {
-            label: 'ChildCare.gov',
-            links: [{ text: 'childcare.gov', href: 'https://childcare.gov/' }],
-          },
-          {
             label: 'MO Parent Education Program',
+            phone: '573-751-4212',
             links: [
               {
-                text: 'dese.mo.gov',
+                text: 'Site',
                 href: 'https://dese.mo.gov/childhood/home-visiting/parent-education',
               },
             ],
+            text: '– Home Visiting 573-522-2355',
           },
           {
-            label: 'Crisis Care for Families',
-            text: '– Temporary care for children: StL City 314-340-7007, StL County 314-264-7700',
+            label: 'The Haven of Grace',
+            phone: '314-621-6507',
+            links: [{ text: 'Site', href: 'https://www.havenofgracestl.org/' }],
+            text: '– Serves women & mothers (unhoused) w/hope & home',
           },
         ],
       },
@@ -1490,23 +2169,43 @@ export const resourceSections: readonly ResourceSection[] = [
       {
         items: [
           {
-            label: 'Legal Services of Eastern Missouri',
-            phone: '800-444-0514',
-            links: [{ text: 'lsem.org', href: 'https://lsem.org/' }],
+            label: 'Arch City Defenders (St. Louis)',
+            phone: '314-361-8834',
+            links: [
+              {
+                text: 'ArchCity Defenders - Legal Aid Services',
+                href: 'https://www.legalaidoffices.com/details/mo_63103_archcity-defenders',
+              },
+              {
+                text: 'Missouri Legal Aid Offices',
+                href: 'https://www.legalaidoffices.com/state/missouri',
+              },
+            ],
+          },
+          {
+            label: 'Catholic Charities',
+            links: [{ text: 'Legal Aid', href: 'https://ccstl.org/services/legal-aid/' }],
           },
           {
             label: 'Immigration Legal Help (International Institute)',
             phone: '314-773-9090',
+            links: [{ text: 'International Institute', href: 'https://www.iistl.org/' }],
             text: 'ext. 115',
           },
           {
-            label: 'Mercy Legal Assistance Resources',
+            label: 'Legal Assistance Resources',
             links: [
               {
-                text: 'PDF',
+                text: 'Mercy PDF',
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/legal-assistance-resources-st-louis-area.pdf',
               },
             ],
+            text: '– St. Louis Area',
+          },
+          {
+            label: 'Legal Services of Eastern Missouri',
+            phone: '800-444-0514',
+            links: [{ text: 'lsem.org', href: 'https://lsem.org/' }],
           },
         ],
       },
@@ -1520,23 +2219,83 @@ export const resourceSections: readonly ResourceSection[] = [
       {
         items: [
           {
+            label: 'Area Agencies on Aging & Services',
+            links: [
+              {
+                text: 'Many Services for Seniors',
+                href: 'https://health.mo.gov/seniors/aaa/',
+              },
+            ],
+          },
+          {
+            label: 'Catholic Charities',
+            links: [{ text: 'Senior Care', href: 'https://ccstl.org/services/senior-care/' }],
+          },
+          {
+            label: 'Center for Aging',
+            phone: '314-747-9234',
+            links: [
+              {
+                text: 'St. Louis/Missouri Community Resources',
+                href: 'https://sites.wustl.edu/centerforaging/education-research/resources/',
+              },
+            ],
+          },
+          {
+            label: 'Missouri Area Offices on Aging',
+            links: [
+              {
+                text: 'Missouri Area',
+                href: 'https://health.mo.gov/seniors/pdf/AAARegion.pdf',
+              },
+            ],
+          },
+          {
             label: 'MO Dept of Health & Senior Services',
             phone: '573-751-6400',
             links: [{ text: 'health.mo.gov', href: 'https://health.mo.gov/' }],
           },
           {
-            label: 'Mercy Senior Citizen Resources',
+            label: 'Retirement Guide',
             links: [
               {
-                text: 'PDF',
+                text: 'Missouri Senior Resource Guide',
+                href: 'https://slcl.libguides.com/c.php?g=1375411&p=10576665',
+              },
+            ],
+          },
+          {
+            label: 'Senior Citizen Resources',
+            links: [
+              {
+                text: 'Mercy PDF',
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/senior-services-stl.pdf',
               },
             ],
           },
-          { label: 'St. Louis City Human Services (Aging)', phone: '314-612-5900' },
           {
-            label: 'St. Louis County Human Services (Older Residents)',
-            phone: '314-615-4444',
+            label: 'St. Louis City Human Services (Aging)',
+            phone: '314-612-5918',
+          },
+          {
+            label: 'St. Louis County Older Residents Programs',
+            phone: '314-615-4516',
+            links: [
+              {
+                text: 'Older Residents',
+                href: 'https://stlouiscountymo.gov/st-louis-county-departments/human-services/county-older-resident-programs/',
+              },
+            ],
+          },
+          {
+            label: 'St. Louis/Missouri Community Resources',
+            phone: '314-747-9234',
+            links: [
+              {
+                text: 'Resource Guide',
+                href: 'https://sites.wustl.edu/centerforaging/education-research/resources/',
+              },
+            ],
           },
         ],
       },
@@ -1549,6 +2308,15 @@ export const resourceSections: readonly ResourceSection[] = [
     groups: [
       {
         items: [
+          {
+            label: 'Catholic Charities',
+            links: [
+              {
+                text: 'Services for Immigrants',
+                href: 'https://ccstl.org/services/for-immigrants/',
+              },
+            ],
+          },
           {
             label: 'International Institute of St. Louis',
             phone: '314-773-9090',
@@ -1564,6 +2332,12 @@ export const resourceSections: readonly ResourceSection[] = [
               },
             ],
           },
+          {
+            label: 'Oasis International',
+            phone: '314-353-3800',
+            links: [{ text: 'St. Louis', href: 'https://www.oasis4refugees.org/refugees/' }],
+            text: '– Helps families get settled into a new life in StL MO',
+          },
         ],
       },
     ],
@@ -1576,23 +2350,20 @@ export const resourceSections: readonly ResourceSection[] = [
       {
         items: [
           {
-            label: 'Missouri Disability Portal',
-            links: [{ text: 'disability.mo.gov', href: 'https://disability.mo.gov/' }],
-          },
-          {
-            label: 'St. Louis Arc',
+            label: 'Access Office',
             links: [
               {
-                text: 'slarc.org',
-                href: 'https://www.slarc.org/resource-library/community-resources/',
+                text: 'StL Community College',
+                href: 'https://stlcc.edu/student-support/disability-services/',
               },
             ],
+            text: '– Support for students w/documented disabilities',
           },
           {
-            label: 'Mercy Disability Resources',
+            label: 'Disability Resources',
             links: [
               {
-                text: 'PDF',
+                text: 'Mercy PDF',
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/disability-resources.pdf',
               },
             ],
@@ -1606,6 +2377,69 @@ export const resourceSections: readonly ResourceSection[] = [
               },
             ],
           },
+          {
+            label: 'Help for the Blind/Visually Impaired',
+            phone: '314-933-7311',
+            links: [
+              { text: 'Blind Services', href: 'https://dss.mo.gov/fsd/rsb/' },
+              { text: 'Contact Us', href: 'https://dss.mo.gov/fsd/rsb/contact-us.htm' },
+            ],
+            text: '– St. Louis Office',
+          },
+          {
+            label: 'Housing',
+            phone: '573-751-9206',
+            links: [
+              {
+                text: 'Missouri Dept. of Mental Health',
+                href: 'https://dmh.mo.gov/housing/unit/housing-resources',
+              },
+            ],
+          },
+          {
+            label: 'Missouri Disability Portal',
+            links: [
+              {
+                text: 'Educational Resources',
+                href: 'https://disability.mo.gov/education.htm',
+              },
+              { text: 'disability.mo.gov', href: 'https://disability.mo.gov/' },
+            ],
+          },
+          {
+            label: 'Missouri Help for Disabled People',
+            links: [
+              {
+                text: 'Disability Resources',
+                href: 'https://www.disabilityresources.org/missouri.html',
+              },
+            ],
+            text: '– Employment, Independent Living, Rehabilitation, Assistive Technology & more',
+          },
+          {
+            label: 'Resources for Students with Disabilities',
+            links: [
+              {
+                text: 'Resources Education USA',
+                href: 'https://educationusa.state.gov/resources-students-disabilities',
+              },
+            ],
+          },
+          {
+            label: 'St. Louis Arc',
+            links: [
+              {
+                text: 'Community Resources',
+                href: 'https://www.slarc.org/resource-library/community-resources/',
+              },
+            ],
+          },
+          {
+            label: 'Transportation for Older Adults & Adults with Disabilities',
+            phone: '800-235-5503',
+            links: [{ text: 'Site', href: 'https://health.mo.gov/seniors/aaa/transportation.php' }],
+            text: '– Includes Senior & Disability Services List',
+          },
         ],
       },
     ],
@@ -1618,21 +2452,55 @@ export const resourceSections: readonly ResourceSection[] = [
       {
         items: [
           {
+            label: 'Activities/Free Family Oriented',
+            links: [
+              {
+                text: 'Mercy PDF',
+                href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/activities-free-and-family-oriented-st-louis-and-surrounding-counties.pdf',
+              },
+            ],
+          },
+          {
+            label: 'Catholic Charities',
+            links: [
+              {
+                text: 'Family & Child Care',
+                href: 'https://ccstl.org/services/family-child-care/',
+              },
+            ],
+          },
+          {
             label: 'Dads of StL',
             links: [{ text: 'dadsofstl.com', href: 'https://dadsofstl.com/' }],
           },
-          { label: 'Fathers & Families Support Center', phone: '314-333-4170' },
           {
             label: 'Family Assistance Programs',
-            links: [{ text: 'mo.gov', href: 'https://www.mo.gov/home-family/family-services/' }],
-          },
-          {
-            label: 'Herman Center for Child & Family Development (Wash U)',
             links: [
               {
-                text: 'hermanncenter.wustl.edu',
+                text: 'Child Care Aware of Missouri',
+                href: 'https://www.mo.gov/home-family/family-services/',
+              },
+            ],
+          },
+          {
+            label: 'Fathers & Families Support Center',
+            phone: '314-333-4170',
+            links: [{ text: 'Site', href: 'https://fatherssupportcenter.org/' }],
+          },
+          {
+            label: 'Herman Center/Child & Family Development',
+            links: [
+              {
+                text: 'Washington University',
                 href: 'https://hermanncenter.wustl.edu/',
               },
+            ],
+          },
+          {
+            label: 'Missouri Dept. of Social Services',
+            links: [
+              { text: 'Family Support Division', href: 'https://mydss.mo.gov/' },
+              { text: 'Contact Us/Find an Office', href: 'https://dss.mo.gov/dss_map/' },
             ],
           },
           {
@@ -1650,6 +2518,35 @@ export const resourceSections: readonly ResourceSection[] = [
               {
                 text: 'stlouiscountymo.gov',
                 href: 'https://stlouiscountymo.gov/st-louis-county-departments/human-services/county-youth-programs/',
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'reading',
+    emoji: '📚',
+    title: 'The Importance of Reading',
+    groups: [
+      {
+        items: [
+          {
+            label: "Why It's Important to Read to Your Children",
+            links: [
+              {
+                text: 'childmind.org',
+                href: 'https://childmind.org/article/why-is-it-important-to-read-to-your-child/',
+              },
+            ],
+          },
+          {
+            label: 'Fathers Reading to Their Child',
+            links: [
+              {
+                text: 'thefatheringproject.org',
+                href: 'https://thefatheringproject.org/fathering-channel/the-positive-impact-a-father-has-by-reading-to-their-child/',
               },
             ],
           },
@@ -1685,21 +2582,20 @@ export const resourceSections: readonly ResourceSection[] = [
           },
           {
             label: 'St. Vincent de Paul Thrift Stores',
-            links: [{ text: 'Locations', href: 'https://svdpstlouis.org/stores/locations' }],
-          },
-          {
-            label: 'Mission St. Louis',
-            links: [{ text: 'missionstl.org', href: 'https://www.missionstl.org/resources' }],
-            text: '– Clothes, hygiene, laundry',
+            links: [
+              { text: 'Locations', href: 'https://svdpstlouis.org/stores/locations' },
+              { text: 'Need Help', href: 'https://svdpstlouis.org/need-help/' },
+            ],
           },
           {
             label: 'Urban League Food/Clothing',
             links: [
               {
                 text: 'ulstl.com',
-                href: 'https://www.ulstl.com/food--clothing-assistance.html#/',
+                href: 'https://www.ulstl.com/food--clothing-assistance.html',
               },
             ],
+            text: '– Food & Clothing 314-615-3642, Food 314-388-9840',
           },
         ],
       },
@@ -1713,10 +2609,6 @@ export const resourceSections: readonly ResourceSection[] = [
       {
         items: [
           {
-            label: 'St. Louis Tax Assistance Program',
-            links: [{ text: 'stlouistap.org', href: 'https://www.stlouistap.org/' }],
-          },
-          {
             label: 'AARP Foundation Tax-Aide',
             links: [
               {
@@ -1729,6 +2621,10 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'MyFreeTaxes',
             links: [{ text: 'myfreetaxes.com', href: 'https://myfreetaxes.com/' }],
           },
+          {
+            label: 'St. Louis Tax Assistance Program',
+            links: [{ text: 'stlouistap.org', href: 'https://www.stlouistap.org/' }],
+          },
         ],
       },
     ],
@@ -1740,6 +2636,15 @@ export const resourceSections: readonly ResourceSection[] = [
     groups: [
       {
         items: [
+          {
+            label: 'Cooling Centers in the St. Louis MO Area',
+            links: [
+              {
+                text: 'stlouis-mo.gov',
+                href: 'https://www.stlouis-mo.gov/live-work/summer/cooling-centers.cfm?city=all',
+              },
+            ],
+          },
           {
             label: 'Cooling Sites',
             links: [
@@ -1759,20 +2664,20 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'St. Louis City Warming Centers',
-            links: [
-              {
-                text: 'stlouis-mo.gov',
-                href: 'https://www.stlouis-mo.gov/live-work/warming-centers.cfm',
-              },
-            ],
-          },
-          {
             label: 'Mercy Warming Center Site List (MO & IL)',
             links: [
               {
                 text: 'PDF',
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/warming-center-resources.pdf',
+              },
+            ],
+          },
+          {
+            label: 'St. Louis City Warming Centers & Shelters',
+            links: [
+              {
+                text: 'stlouis-mo.gov',
+                href: 'https://www.stlouis-mo.gov/live-work/warming-centers.cfm',
               },
             ],
           },
@@ -1788,11 +2693,57 @@ export const resourceSections: readonly ResourceSection[] = [
       {
         items: [
           {
+            label: 'Best Free Government Phone Providers in Missouri',
+            links: [
+              {
+                text: '2026 Lifeline Guide | Cliq Mobile',
+                href: 'https://www.gocliqmobile.com/states/missouri',
+              },
+            ],
+          },
+          {
+            label: 'Evaluation of Free Government Phones',
+            links: [
+              {
+                text: 'Top Free Government Phone Providers Ranked by Customer Reviews',
+                href: 'https://govtphones.org/blog/top-providers-customer-reviews',
+              },
+            ],
+          },
+          {
+            label: 'Free Government Laptop',
+            links: [
+              {
+                text: 'Free Government Tablet Missouri For Low-Income? - AirTalk Wireless',
+                href: 'https://airtalkwireless.com/blog/free-government-tablet-missouri',
+              },
+            ],
+          },
+          {
+            label: 'Free Government Phone Service in Missouri',
+            links: [
+              {
+                text: 'Lifeline Program',
+                href: 'https://www.assistwireless.com/lifeline-plans/missouri/',
+              },
+            ],
+          },
+          {
             label: 'Mercy Technology Assistance Resources',
             links: [
               {
                 text: 'PDF',
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/technology-assistance-resources.pdf',
+              },
+            ],
+            text: '– Earn a Computer Program, Children 8-17',
+          },
+          {
+            label: 'Missouri Application for Lifeline Program',
+            links: [
+              {
+                text: 'efis.psc.mo.gov',
+                href: 'https://www.efis.psc.mo.gov/Document/Display/46123',
               },
             ],
           },
@@ -1804,7 +2755,7 @@ export const resourceSections: readonly ResourceSection[] = [
                 href: 'https://www.npower.org/locations/missouri/',
               },
             ],
-            text: '– Free tech training',
+            text: '– Free tech training & development to young adult job seekers in St. Louis & Kansas City',
           },
           {
             label: 'STLCC Tech Academy',
@@ -1814,6 +2765,7 @@ export const resourceSections: readonly ResourceSection[] = [
                 href: 'https://stlcc.edu/programs-academics/pathways/techacademy/',
               },
             ],
+            text: '– Empowers you to start your path to an in-demand career in technology',
           },
         ],
       },

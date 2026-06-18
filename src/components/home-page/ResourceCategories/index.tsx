@@ -5,10 +5,10 @@ type CategoryLink = { emoji: string; label: string; href: string }
 
 const categories: CategoryLink[] = [
   { emoji: '🍲', label: 'Food', href: '/resources#food' },
-  { emoji: '🏠', label: 'Housing', href: '/resources#housing' },
+  { emoji: '🏠', label: 'Housing & Shelter', href: '/resources#housing' },
   { emoji: '⚕️', label: 'Medical', href: '/resources#medical' },
   { emoji: '🧠', label: 'Mental Health', href: '/resources#mental-health' },
-  { emoji: '💼', label: 'Jobs & Training', href: '/resources#jobs' },
+  { emoji: '💼', label: 'Jobs, Education, & Training', href: '/resources#jobs' },
   { emoji: '💡', label: 'Utilities', href: '/resources#utilities' },
   { emoji: '🎖️', label: 'Veterans', href: '/resources#veterans' },
   { emoji: '🚌', label: 'Transportation', href: '/resources#transportation' },
@@ -24,7 +24,7 @@ const categories: CategoryLink[] = [
   { emoji: '❄️', label: 'Cooling/Warming', href: '/resources#weather' },
   { emoji: '💻', label: 'Technology', href: '/resources#technology' },
   { emoji: '📋', label: 'Social Workers', href: '/social-workers' },
-  { emoji: '🎓', label: 'Education & College', href: '/education-career' },
+  { emoji: '🎓', label: 'Education & Career Planning', href: '/education-career' },
 ]
 
 /** Category quick-link grid card, matching the source site's second card. */
