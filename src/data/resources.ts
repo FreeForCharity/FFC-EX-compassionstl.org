@@ -1117,7 +1117,7 @@ export const resourceSections: readonly ResourceSection[] = [
           },
           {
             label: 'Free Diapers',
-            text: '– StL County Libraries 314-994-3300, StL City Libraries 314-241-2288, St. Charles Libraries 636-441-2300',
+            text: '– StL County Libraries 314-996-3300, StL City Libraries 314-241-2288, St. Charles Libraries 636-441-2300',
           },
           {
             label: 'Free Eye Care Service (Washington University Medicine)',
@@ -1379,6 +1379,7 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'Community Action Agency StL County',
             phone: '314-863-0015',
             links: [{ text: 'caastlc.org', href: 'https://www.caastlc.org/' }],
+            text: '(Utilities, Housing, Weatherization, Reentry, Immigrants, Mental Health)',
           },
           {
             label: 'Dial 211 – Utility Help',
@@ -2072,7 +2073,7 @@ export const resourceSections: readonly ResourceSection[] = [
           },
           {
             label: 'One-on-One Advising with a Social Worker',
-            phone: '314-994-3300',
+            phone: '314-993-3300',
             links: [
               {
                 text: 'Book a Social Worker | St. Louis County Library',

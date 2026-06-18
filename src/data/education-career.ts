@@ -114,7 +114,12 @@ export const educationCareerSections: readonly ResourceSection[] = [
           },
           {
             label: 'SAT Plan for Life After High School',
-            text: '– BigFuture by College Board',
+            links: [
+              {
+                text: 'BigFuture by College Board',
+                href: 'https://bigfuture.collegeboard.org/plan-for-college',
+              },
+            ],
           },
           {
             label: 'Tips for College-Bound Students (SLU)',
@@ -423,10 +428,10 @@ export const educationCareerSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: '',
+            label: 'Tips for Getting a Good Start in High School',
             links: [
               {
-                text: 'Tips for Getting a Good Start in High School',
+                text: 'childmind.org',
                 href: 'https://childmind.org/article/tips-for-getting-a-good-start-in-high-school/',
               },
             ],
@@ -794,7 +799,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'Fastweb',
+            label: 'Fastweb (Vocational & Trade Schools)',
             links: [
               {
                 text: 'Vocational, Technical & Trade School Scholarships',
@@ -1129,11 +1134,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
             label: 'Excel Adult High School',
             links: [
               {
-                text: 'StL County Library',
-                href: 'https://www.slcl.org/research-learn/excel-adult-high-school',
-              },
-              {
-                text: 'Online high school diploma',
+                text: 'StL County Library – Online high school diploma',
                 href: 'https://www.slcl.org/research-learn/excel-adult-high-school',
               },
             ],
