@@ -17,6 +17,12 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+# Least-privilege default for the GITHUB_TOKEN: every job here only reads the
+# repo (checkout, build, test, link check) — none write contents, comment, or
+# deploy. Override per-job if a future job needs more.
+permissions:
+  contents: read
+
 jobs:
   test-and-build:
     name: Test and Build
@@ -72,11 +78,14 @@ jobs:
           retention-days: 7
 
   link-check:
-    name: Link check (soft-fail)
+    name: Link check
     runs-on: ubuntu-latest
-    # Soft-fail today so we can see what linkinator surfaces without
-    # blocking merges. Flip to hard-fail once the noise is understood
-    # — tracked as a follow-up to #289.
+    # Validates the site's own navigation and in-page anchors against a
+    # locally served copy of the static export, so extensionless routes
+    # (e.g. /resources) resolve the way GitHub Pages serves them instead of
+    # 404ing against resources.html on the raw filesystem. External links
+    # are skipped (see .linkinatorrc.json) to keep the check from flaking on
+    # third-party outages. Kept non-blocking as a safety net.
     continue-on-error: true
     # Kept as a separate job (not inside test-and-build) so it does not
     # multiply across the Playwright shard matrix introduced by #133.
@@ -98,4 +107,19 @@ jobs:
         run: npm run build
 
       - name: Check for broken links
-        run: npm run check-links
+        run: |
+          npx serve out -l 3200 &
+          SERVER_PID=$!
+          # Always tear the server down, whether linkinator passes, fails, or errors.
+          trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
+          for i in $(seq 1 30); do
+            curl -sf http://localhost:3200/ >/dev/null 2>&1 && break
+            sleep 1
+          done
+          # Fail with a clear message rather than letting linkinator emit a
+          # confusing connection error if the server never came up.
+          curl -sf http://localhost:3200/ >/dev/null 2>&1 || {
+            echo "::error::static server did not become reachable on :3200"
+            exit 1
+          }
+          npm run check-links
