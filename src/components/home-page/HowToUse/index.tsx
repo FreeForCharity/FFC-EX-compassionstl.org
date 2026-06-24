@@ -18,7 +18,7 @@ const HowToUse = () => {
         for free one-on-one help.
         <br />
         4. Planning for college or a new career? Explore the{' '}
-        <Link href="/education-career">Education &amp; Career</Link> section.
+        <Link href="/education-career">Education &amp; Career Planning</Link> section.
         <br />
         <strong>Always verify</strong> hours and eligibility directly with the organization.
       </p>

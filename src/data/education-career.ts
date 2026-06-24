@@ -214,13 +214,8 @@ export const educationCareerSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'How Middle Class Affords College',
-            links: [
-              {
-                text: 'SoFi Learn',
-                href: 'https://www.sofi.com/learn/content/middle-class-college-financial-aid/',
-              },
-            ],
+            label: 'How to Find Financial Aid for College: 6 Strategies for Middle Class Families',
+            text: 'College Raptor',
           },
           {
             label: 'List of Colleges with Free Tuition for Low Income Students',
@@ -751,6 +746,14 @@ export const educationCareerSections: readonly ResourceSection[] = [
             text: 'Student Portal',
           },
           {
+            label: 'Missouri Grants & Scholarships',
+            links: [{ text: 'Information', href: 'https://dhewd.mo.gov/ppc/grants-scholarships' }],
+          },
+          {
+            label: 'Missouri Scholarship & Loan Foundation',
+            links: [{ text: 'Information', href: 'https://www.moslf.org/programs.aspx' }],
+          },
+          {
             label: 'Money for College',
             links: [
               {
@@ -1231,6 +1234,22 @@ export const educationCareerSections: readonly ResourceSection[] = [
       {
         items: [
           {
+            label: 'Apprenticeship Missouri',
+            links: [
+              {
+                text: 'Details',
+                href: 'https://dhewd.mo.gov/workforce-development/apprenticeship-mo',
+              },
+            ],
+            text: 'Includes Apprenticeship Resources',
+          },
+          {
+            label: 'Apprenticeships & Skilled Craft',
+            links: [
+              { text: 'Ameren', href: 'https://www.ameren.com/career/paths/apprenticeships' },
+            ],
+          },
+          {
             label: 'Apprenticeships Missouri',
             links: [
               {
@@ -1251,6 +1270,14 @@ export const educationCareerSections: readonly ResourceSection[] = [
                 href: 'https://slcl.libguides.com/skilled_trades_guide',
               },
             ],
+          },
+          {
+            label: 'Missouri Apprenticeship Connect',
+            phone: '573-634-3511',
+            links: [
+              { text: 'moapprenticeconnect.com', href: 'https://www.moapprenticeconnect.com/' },
+            ],
+            text: 'Matches individuals with actual paid apprenticeships across various regions',
           },
           {
             label: 'Missouri Works Initiative',
@@ -1290,6 +1317,15 @@ export const educationCareerSections: readonly ResourceSection[] = [
               {
                 text: 'Short-Term Career Training',
                 href: 'https://stlcc.edu/workforce/training-programs/',
+              },
+            ],
+          },
+          {
+            label: 'Skilled Trades & Industrial Occupations Technology',
+            links: [
+              {
+                text: 'STLCC Skilled Trades',
+                href: 'https://stlcc.edu/pathways/industrial/skilled-trades/',
               },
             ],
           },
