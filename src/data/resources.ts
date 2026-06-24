@@ -1382,7 +1382,7 @@ export const resourceSections: readonly ResourceSection[] = [
             text: '– Mental Health & Wellness, Addiction Recovery',
           },
           {
-            label: 'Children & Teens Service (MO Dept. of Mental Health)',
+            label: 'Children & Teens Services (MO Dept. of Mental Health)',
             links: [
               { text: 'Children & Teens', href: 'https://dmh.mo.gov/children-services/child-teen' },
               { text: "Children's Services", href: 'https://dmh.mo.gov/children-services' },

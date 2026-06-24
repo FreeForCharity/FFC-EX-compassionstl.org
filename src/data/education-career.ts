@@ -217,7 +217,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
             label: 'How to Find Financial Aid for College: 6 Strategies for Middle Class Families',
             links: [
               {
-                text: 'College Raptor',
+                text: 'CollegeRaptor',
                 href: 'https://www.collegeraptor.com/paying-for-college/articles/financial-aid/financial-aid-for-middle-class-families-heres-how-to-find-it-6-strategies/',
               },
             ],
