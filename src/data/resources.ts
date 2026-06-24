@@ -395,6 +395,10 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
+            label: 'Missouri DSS Toll-Free Numbers',
+            links: [{ text: 'Toll-Free Numbers', href: 'https://dss.mo.gov/toll.htm' }],
+          },
+          {
             label: 'Missouri Option Program (Graduate from High School)',
             links: [
               {
@@ -997,10 +1001,14 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'Maternity Home',
-            phone: '314-351-4590',
-            links: [{ text: "Our Lady's Inn", href: 'https://ourladysinn.org/' }],
-            text: '– Safe haven for women & children in need of housing services. StL City & County 314-351-4590, St. Charles Inn 636-398-5375',
+            label: 'Maternity Homes Missouri',
+            links: [
+              {
+                text: 'Qualified Maternity Homes (PDF)',
+                href: 'https://dss.mo.gov/dfas/taxcredit/pdf/qualified-maternity-homes.pdf',
+              },
+            ],
+            text: '– List of qualified Missouri maternity homes',
           },
           {
             label: 'Missouri Housing Resources',
@@ -1020,6 +1028,12 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'MO Rental Assistance Program',
             links: [{ text: 'Details', href: 'https://dmh.mo.gov/housing/unit/rental-assistance' }],
             text: '– One-time help',
+          },
+          {
+            label: "Our Lady's Inn (Maternity Home)",
+            phone: '314-351-4590',
+            links: [{ text: 'ourladysinn.org', href: 'https://ourladysinn.org/' }],
+            text: '– Safe haven for women & children in need of housing services. StL City & County 314-351-4590, St. Charles Inn 636-398-5375',
           },
           {
             label: 'Peter & Paul Community Services',

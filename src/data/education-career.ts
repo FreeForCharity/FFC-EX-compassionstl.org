@@ -1239,7 +1239,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
       {
         items: [
           {
-            label: 'Apprenticeship Missouri',
+            label: 'Apprenticeship Missouri (DHEWD)',
             links: [
               {
                 text: 'Details',
@@ -1255,7 +1255,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'Apprenticeships Missouri',
+            label: 'Apprenticeships Missouri (jobs.mo.gov)',
             links: [
               {
                 text: 'jobs.mo.gov/moapprenticeships',
@@ -1696,7 +1696,12 @@ export const educationCareerSections: readonly ResourceSection[] = [
           },
           {
             label: 'Justice-Impacted Job Seekers',
-            text: '– CareerOneStop reentry resources',
+            links: [
+              {
+                text: 'CareerOneStop reentry resources',
+                href: 'https://www.careeronestop.org/JusticeImpacted/default.aspx',
+              },
+            ],
           },
           {
             label: 'Military Community Services',
