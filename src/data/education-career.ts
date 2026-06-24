@@ -1201,7 +1201,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: '13 Scholarships & Grants for Adults Going Back to School for 2026',
+            label: '13 Scholarships & Grants for Adults Going Back to School',
             links: [
               {
                 text: '13 Scholarships/Grants',
@@ -1210,7 +1210,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'Top 32 Scholarships for Adults in May 2026',
+            label: 'Top 32 Scholarships for Adults',
             links: [
               {
                 text: 'Top 30 Scholarships',

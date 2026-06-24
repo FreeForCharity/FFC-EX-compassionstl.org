@@ -1233,10 +1233,6 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'Free Diapers',
-            text: '– StL County Libraries 314-994-3300, StL City Libraries 314-241-2288, St. Charles Libraries 636-441-2300',
-          },
-          {
             label: 'Free Eye Care Service (Washington University Medicine)',
             links: [
               {
@@ -1276,7 +1272,7 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'Mercy Eye Care / Vision Resources',
             links: [
               {
-                text: 'PDF',
+                text: 'Mercy PDF',
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/eye-care-vision-resources.pdf',
               },
             ],
@@ -1434,7 +1430,7 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'Mercy Mental Health Resources',
             links: [
               {
-                text: 'PDF',
+                text: 'Mercy PDF',
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/mental-health-resources-in-st-louis.pdf',
               },
             ],
@@ -1765,7 +1761,7 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'Mercy Employment & Training',
             links: [
               {
-                text: 'PDF',
+                text: 'Mercy PDF',
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/Employment-and-Training-Resources.pdf',
               },
             ],
@@ -2060,7 +2056,7 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'Mercy Transportation – StL City & County',
             links: [
               {
-                text: 'PDF',
+                text: 'Mercy PDF',
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/transportation-resources-st-louis-city-and-st-louis-county.pdf',
               },
             ],
@@ -2069,7 +2065,7 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'Mercy Transportation – StL South',
             links: [
               {
-                text: 'PDF',
+                text: 'Mercy PDF',
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/transportation-resources-st-louis-south.pdf',
               },
             ],
@@ -2082,7 +2078,7 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'Metro Reduced Fare Application',
             links: [
               {
-                text: 'PDF',
+                text: 'Mercy PDF',
                 href: 'https://www.mercy.net/content/dam/mercy/en/images/transportation_-_senior_metroreducedfareapplication2017.pdf',
               },
             ],
@@ -2481,7 +2477,7 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'Mercy Immigrant & Refugee Resources',
             links: [
               {
-                text: 'PDF',
+                text: 'Mercy PDF',
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/immigrant-and-refugee-resources-st-louis-area.pdf',
               },
             ],
@@ -2780,7 +2776,7 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'Mercy Clothing Resources',
             links: [
               {
-                text: 'PDF',
+                text: 'Mercy PDF',
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/Clothing-Resources-stl-and-counties.pdf',
               },
             ],
@@ -2872,7 +2868,7 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'Mercy Warming Center Site List (MO & IL)',
             links: [
               {
-                text: 'PDF',
+                text: 'Mercy PDF',
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/warming-center-resources.pdf',
               },
             ],
@@ -2901,7 +2897,7 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'Best Free Government Phone Providers in Missouri',
             links: [
               {
-                text: '2026 Lifeline Guide | Cliq Mobile',
+                text: 'Lifeline Guide | Cliq Mobile',
                 href: 'https://www.gocliqmobile.com/states/missouri',
               },
             ],
@@ -2937,7 +2933,7 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'Mercy Technology Assistance Resources',
             links: [
               {
-                text: 'PDF',
+                text: 'Mercy PDF',
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/technology-assistance-resources.pdf',
               },
             ],
