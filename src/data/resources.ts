@@ -2668,6 +2668,7 @@ export const resourceSections: readonly ResourceSection[] = [
           },
           {
             label: 'Missouri Child Care Subsidy Program',
+            phone: '573-415-8605',
             links: [
               {
                 text: 'Child Care Subsidy',

@@ -215,7 +215,12 @@ export const educationCareerSections: readonly ResourceSection[] = [
           },
           {
             label: 'How to Find Financial Aid for College: 6 Strategies for Middle Class Families',
-            text: '– College Raptor',
+            links: [
+              {
+                text: 'College Raptor',
+                href: 'https://www.collegeraptor.com/paying-for-college/articles/financial-aid/financial-aid-for-middle-class-families-heres-how-to-find-it-6-strategies/',
+              },
+            ],
           },
           {
             label: 'List of Colleges with Free Tuition for Low Income Students',
