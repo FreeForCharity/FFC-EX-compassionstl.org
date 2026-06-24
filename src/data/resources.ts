@@ -2675,7 +2675,7 @@ export const resourceSections: readonly ResourceSection[] = [
                 href: 'https://dese.mo.gov/childhood/child-care-subsidy',
               },
             ],
-            text: '– Payments for child care to help families with the costs of child care so they can focus on finding & holding steady jobs and/or attend school & training programs',
+            text: '– Applications & Authorizations (Childhood Resource & Referral Call Center): 573-415-8605; General DESE Early Learning / translation line: 573-751-4212. Payments for child care to help families with the costs of child care so they can focus on finding & holding steady jobs and/or attend school & training programs',
           },
           {
             label: 'Missouri Dept. of Social Services',
