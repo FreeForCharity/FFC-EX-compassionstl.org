@@ -914,7 +914,7 @@ export const resourceSections: readonly ResourceSection[] = [
             label: 'Good Shepherd',
             phone: '314-854-5700',
             links: [{ text: 'Home – Good Shepherd', href: 'https://goodshepherdstl.org/' }],
-            text: '(Catholic Charities) – Connecting Children with Families & Keeping Families Connected',
+            text: '– Catholic Charities. Connecting Children with Families & Keeping Families Connected',
           },
           {
             label: 'Help and Housing for Single Mothers',

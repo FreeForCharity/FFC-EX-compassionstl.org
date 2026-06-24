@@ -215,7 +215,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
           },
           {
             label: 'How to Find Financial Aid for College: 6 Strategies for Middle Class Families',
-            text: 'College Raptor',
+            text: '– College Raptor',
           },
           {
             label: 'List of Colleges with Free Tuition for Low Income Students',
@@ -1241,7 +1241,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
                 href: 'https://dhewd.mo.gov/workforce-development/apprenticeship-mo',
               },
             ],
-            text: 'Includes Apprenticeship Resources',
+            text: '– Includes Apprenticeship Resources',
           },
           {
             label: 'Apprenticeships & Skilled Craft',
@@ -1277,7 +1277,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
             links: [
               { text: 'moapprenticeconnect.com', href: 'https://www.moapprenticeconnect.com/' },
             ],
-            text: 'Matches individuals with actual paid apprenticeships across various regions',
+            text: '– Matches individuals with actual paid apprenticeships across various regions',
           },
           {
             label: 'Missouri Works Initiative',
