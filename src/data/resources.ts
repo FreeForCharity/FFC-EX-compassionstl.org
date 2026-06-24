@@ -285,6 +285,11 @@ export const resourceSections: readonly ResourceSection[] = [
       {
         items: [
           {
+            label: 'Alternatives to Abortion Missouri',
+            links: [{ text: 'Alternatives to Abortion', href: 'https://dss.mo.gov/fsd/a2a/' }],
+            text: '– Compassionate support for you and your child',
+          },
+          {
             label: 'Apply for Temporary Assistance',
             phone: '855-373-4636',
             links: [
@@ -300,6 +305,12 @@ export const resourceSections: readonly ResourceSection[] = [
             phone: '636-227-6200',
             links: [{ text: 'alstl.org', href: 'https://alstl.org/' }],
             text: '– Tackling unmet community needs: Books, Clothing, Outreach, Scholarships, Support for Shelters, & items to help families through tough times',
+          },
+          {
+            label: 'AZA Program',
+            links: [
+              { text: 'Compassionate Support for you & your child', href: 'https://moa2a.com/' },
+            ],
           },
           {
             label: 'Clothing Resources',
@@ -335,6 +346,24 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
+            label: 'Emergency Assistance for Single Mothers in Missouri',
+            links: [
+              {
+                text: 'Information',
+                href: 'https://www.asinglemother.org/emergency-assistance-for-single-mothers-in-missouri/',
+              },
+            ],
+          },
+          {
+            label: 'Emergency Cash for Low-Income Families in Missouri',
+            links: [
+              {
+                text: 'Help for single moms in Missouri: 33 assistance programs',
+                href: 'https://www.wealthysinglemommy.com/help-for-single-moms-missouri/',
+              },
+            ],
+          },
+          {
             label: 'Find Help',
             links: [{ text: 'findhelp.org', href: 'https://www.findhelp.org/' }],
           },
@@ -364,6 +393,10 @@ export const resourceSections: readonly ResourceSection[] = [
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/government-related-resources.pdf',
               },
             ],
+          },
+          {
+            label: 'Missouri DSS Toll-Free Numbers',
+            links: [{ text: 'Toll-Free Numbers', href: 'https://dss.mo.gov/toll.htm' }],
           },
           {
             label: 'Missouri Option Program (Graduate from High School)',
@@ -769,10 +802,6 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'MO Food Assistance (SNAP)',
-            links: [{ text: 'Apply for SNAP', href: 'https://mydss.mo.gov/food-assistance' }],
-          },
-          {
             label: 'MO Food Programs',
             links: [
               {
@@ -806,6 +835,26 @@ export const resourceSections: readonly ResourceSection[] = [
                 href: 'https://www.google.com/search?q=salvation+army++st+louis+county+missouri',
               },
             ],
+          },
+          {
+            label: 'SkillUP',
+            links: [
+              {
+                text: 'Missouri SkillUP Program',
+                href: 'https://mydss.mo.gov/skillup-program',
+              },
+            ],
+            text: '– A free program that helps SNAP (Food Stamp) recipients get help with skills, training, and employer connections to get a job (or a better job)',
+          },
+          {
+            label: 'SNAP (Food Stamp Program)',
+            links: [
+              {
+                text: 'Apply for SNAP',
+                href: 'https://mydss.mo.gov/food-assistance/apply-for-snap',
+              },
+            ],
+            text: '– The Supplemental Nutrition Assistance Program (SNAP) offers a monthly benefit to help you buy food and food products, such as seeds and plants to grow food',
           },
           {
             label: 'St. Louis Area Food Bank',
@@ -866,6 +915,21 @@ export const resourceSections: readonly ResourceSection[] = [
             links: [{ text: 'Housing Resource Hotline', href: 'https://gateway180.org/' }],
           },
           {
+            label: 'Good Shepherd',
+            phone: '314-854-5700',
+            links: [{ text: 'Home – Good Shepherd', href: 'https://goodshepherdstl.org/' }],
+            text: '– Catholic Charities. Connecting Children with Families & Keeping Families Connected',
+          },
+          {
+            label: 'Help and Housing for Single Mothers',
+            links: [
+              {
+                text: 'Information',
+                href: 'https://www.bing.com/search?q=help+and+housing+for+single+mothers+st+louis+mo',
+              },
+            ],
+          },
+          {
             label: 'Help for Youth',
             links: [
               {
@@ -895,6 +959,16 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
+            label: 'Homeless Hotline & Shelter Resources',
+            phone: '314-802-5444',
+            links: [
+              {
+                text: 'St. Louis City & County',
+                href: 'https://houseeveryonestl.org/resources-shelter/',
+              },
+            ],
+          },
+          {
             label: 'Homeless Services',
             phone: '314-657-1704',
             links: [
@@ -909,6 +983,15 @@ export const resourceSections: readonly ResourceSection[] = [
             links: [{ text: 'Find shelters', href: 'https://www.homelessshelterdirectory.org/' }],
           },
           {
+            label: 'Housing Assistance for Single Mothers in Missouri',
+            links: [
+              {
+                text: 'Information',
+                href: 'https://www.asinglemother.org/housing-assistance-in-missouri/',
+              },
+            ],
+          },
+          {
             label: 'Housing/Foreclosure Resources',
             links: [
               {
@@ -916,6 +999,16 @@ export const resourceSections: readonly ResourceSection[] = [
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/housing-foreclosure-resources.pdf',
               },
             ],
+          },
+          {
+            label: 'Maternity Homes Missouri',
+            links: [
+              {
+                text: 'Qualified Maternity Homes (PDF)',
+                href: 'https://dss.mo.gov/dfas/taxcredit/pdf/qualified-maternity-homes.pdf',
+              },
+            ],
+            text: '– List of qualified Missouri maternity homes',
           },
           {
             label: 'Missouri Housing Resources',
@@ -937,15 +1030,39 @@ export const resourceSections: readonly ResourceSection[] = [
             text: '– One-time help',
           },
           {
+            label: "Our Lady's Inn (Maternity Home)",
+            phone: '314-351-4590',
+            links: [{ text: 'ourladysinn.org', href: 'https://ourladysinn.org/' }],
+            text: '– Safe haven for women & children in need of housing services. StL City & County 314-351-4590, St. Charles Inn 636-398-5375',
+          },
+          {
             label: 'Peter & Paul Community Services',
             phone: '314-588-7111',
             links: [{ text: 'Homeless', href: 'https://ppcsinc.org/' }],
+          },
+          {
+            label: 'Rent Assistance for Single Moms in Missouri',
+            links: [
+              {
+                text: 'Information',
+                href: 'https://singlemother-grant.com/rent-assistance-for-single-moms-missouri/',
+              },
+            ],
           },
           {
             label: 'Room at the Inn',
             phone: '314-209-9181',
             links: [{ text: 'Housing', href: 'https://www.roomstl.org/' }],
             text: '– Shelter for Families, Bridgeton, MO',
+          },
+          {
+            label: 'Shelter & Services for Women & Their Children',
+            links: [
+              {
+                text: 'Catholic Charities',
+                href: 'https://ccstl.org/services/family-child-care/shelter-and-services-for-women-and-their-children/',
+              },
+            ],
           },
           {
             label: 'State Assistance for Housing Relief',
@@ -1279,6 +1396,13 @@ export const resourceSections: readonly ResourceSection[] = [
             text: '– Mental Health & Wellness, Addiction Recovery',
           },
           {
+            label: 'Children & Teens Services (MO Dept. of Mental Health)',
+            links: [
+              { text: 'Children & Teens', href: 'https://dmh.mo.gov/children-services/child-teen' },
+              { text: "Children's Services", href: 'https://dmh.mo.gov/children-services' },
+            ],
+          },
+          {
             label: 'Crisis Care Missouri Dept. of Social Services (DSS)',
             links: [
               {
@@ -1341,6 +1465,21 @@ export const resourceSections: readonly ResourceSection[] = [
             text: '– Youth crisis help',
           },
           {
+            label: 'St. Louis Behavioral Medicine Institute',
+            phone: '314-289-9411',
+            links: [{ text: 'slbmi.com', href: 'https://slbmi.com/' }],
+          },
+          {
+            label: "St. Louis Children's Psychiatric Center",
+            phone: '800-678-5437',
+            links: [
+              {
+                text: 'Site',
+                href: 'https://www.stlouischildrens.org/conditions-treatments/psychiatry-center',
+              },
+            ],
+          },
+          {
             label: 'Substance Use Resources',
             links: [
               {
@@ -1348,6 +1487,12 @@ export const resourceSections: readonly ResourceSection[] = [
                 href: 'https://www.mercy.net/content/dam/mercy/en/pdf/mnm-resources/substance-use-resources.pdf',
               },
             ],
+          },
+          {
+            label: 'The Spot',
+            phone: '314-535-0413',
+            links: [{ text: 'thespot.wustl.edu', href: 'https://thespot.wustl.edu/' }],
+            text: '– Supporting Positive Opportunities with Teens',
           },
           {
             label: 'Veterans Crisis Line',
@@ -2137,6 +2282,15 @@ export const resourceSections: readonly ResourceSection[] = [
             text: '– Temporary care for children birth to 18yrs: City 314-340-7007, StL County 314-264-7700',
           },
           {
+            label: 'Missouri Family Resources & Child Care Assistance',
+            links: [
+              {
+                text: 'Helpful Family Resources',
+                href: 'https://united4children.org/resource-and-referral/',
+              },
+            ],
+          },
+          {
             label: "Missouri's Early Care & Education Connections",
             links: [{ text: 'earlyconnections.mo.gov', href: 'https://earlyconnections.mo.gov/' }],
           },
@@ -2461,11 +2615,41 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
+            label: 'Assistance for Single Mothers in Missouri',
+            links: [
+              {
+                text: 'Grants for Single Mothers in Missouri (MO)',
+                href: 'https://singlemotherguide.com/state/missouri',
+              },
+              { text: 'Singlemom.com', href: 'https://singlemom.com/missouri-assistance/' },
+            ],
+          },
+          {
             label: 'Catholic Charities',
             links: [
               {
                 text: 'Family & Child Care',
                 href: 'https://ccstl.org/services/family-child-care/',
+              },
+            ],
+          },
+          {
+            label: "Children's Service Fund",
+            phone: '314-615-5850',
+            links: [
+              {
+                text: "Find A Service – St. Louis County Children's Service Fund",
+                href: 'https://stlcsf.org/find-a-service/',
+              },
+            ],
+            text: '– Connects families with trusted, high-quality services tailored to your needs',
+          },
+          {
+            label: 'Community Support for Single Mothers in Missouri',
+            links: [
+              {
+                text: 'Information',
+                href: 'https://www.asinglemother.org/community-support-for-single-mothers-in-missouri/',
               },
             ],
           },
@@ -2497,10 +2681,31 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
+            label: 'Missouri Child Care Subsidy Program',
+            phone: '573-415-8605',
+            links: [
+              {
+                text: 'Child Care Subsidy',
+                href: 'https://dese.mo.gov/childhood/child-care-subsidy',
+              },
+            ],
+            text: '– Applications & Authorizations (Childhood Resource & Referral Call Center): 573-415-8605; General DESE Early Learning / translation line: 573-751-4212. Payments for child care to help families with the costs of child care so they can focus on finding & holding steady jobs and/or attend school & training programs',
+          },
+          {
             label: 'Missouri Dept. of Social Services',
             links: [
               { text: 'Family Support Division', href: 'https://mydss.mo.gov/' },
               { text: 'Contact Us/Find an Office', href: 'https://dss.mo.gov/dss_map/' },
+            ],
+          },
+          {
+            label: 'Stronger StL',
+            phone: '314-622-3201',
+            links: [
+              {
+                text: 'Job Training & Child Support',
+                href: 'https://arpa.stlouis-mo.gov/announcements/single-dads-job-training-builds-strong-families/',
+              },
             ],
           },
           {
@@ -2781,6 +2986,7 @@ export const resourceSections: readonly ResourceSection[] = [
           {
             label: 'College Church Outreach Program',
             phone: '314-266-9557',
+            links: [{ text: 'Outreach', href: 'https://sfxstl.org/outreach' }],
             text: '– St. Francis Xavier College Church, 3628 Lindell Blvd, Lower Level SFX Ballroom, StL 63108. Birth certificates & non-driver IDs, one per person per year. Tuesdays starting at 9am, first come first served or by appointment.',
           },
           {

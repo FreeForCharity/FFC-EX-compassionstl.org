@@ -23,6 +23,9 @@ const Mission = () => {
           Connect with medical/dental clinics, mental health crisis lines, and prescription aid
         </li>
         <li>Explore job centers, career training, apprenticeships, and GED programs</li>
+        <li>
+          Consider choices after high school: financial aid, scholarships, trades, ACT, and SAT
+        </li>
         <li>Get help with utilities, transportation, legal aid, and veteran services</li>
         <li>Book a free appointment with a social worker at St. Louis County Library</li>
       </ul>
