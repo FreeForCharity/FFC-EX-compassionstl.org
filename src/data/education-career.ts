@@ -273,7 +273,12 @@ export const educationCareerSections: readonly ResourceSection[] = [
           },
           {
             label: 'Which Colleges Offer Free Tuition',
-            text: 'The College Investor Full List',
+            links: [
+              {
+                text: 'The College Investor Full List',
+                href: 'https://thecollegeinvestor.com/39431/tuition-free-colleges/',
+              },
+            ],
           },
         ],
       },
