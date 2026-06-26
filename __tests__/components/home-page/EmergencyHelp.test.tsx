@@ -21,4 +21,17 @@ describe('EmergencyHelp', () => {
       'tel:3143675500'
     )
   })
+
+  it('lists the national safety hotlines (DV, Poison Control, Crisis Text Line)', () => {
+    render(<EmergencyHelp />)
+    expect(screen.getByRole('link', { name: '1-800-799-7233' })).toHaveAttribute(
+      'href',
+      'tel:18007997233'
+    )
+    expect(screen.getByRole('link', { name: '1-800-222-1222' })).toHaveAttribute(
+      'href',
+      'tel:18002221222'
+    )
+    expect(screen.getByText(/Text HOME to 741741/i)).toBeInTheDocument()
+  })
 })

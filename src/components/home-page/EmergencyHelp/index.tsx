@@ -22,6 +22,12 @@ const EmergencyHelp = () => {
           </a>
         </li>
         <li>
+          <strong>Crisis Text Line</strong> – Text HOME to 741741 |{' '}
+          <a href="https://www.crisistextline.org/" target="_blank" rel="noopener noreferrer">
+            crisistextline.org
+          </a>
+        </li>
+        <li>
           <strong>Find Help (search engine)</strong> –{' '}
           <a href="https://www.findhelp.org/" target="_blank" rel="noopener noreferrer">
             findhelp.org
@@ -55,6 +61,26 @@ const EmergencyHelp = () => {
             rel="noopener noreferrer"
           >
             Resource Lists
+          </a>
+        </li>
+        <li>
+          <strong>National Domestic Violence Hotline</strong> –{' '}
+          <a className="phone" href="tel:18007997233">
+            1-800-799-7233
+          </a>{' '}
+          (or text START to 88788) |{' '}
+          <a href="https://www.thehotline.org/" target="_blank" rel="noopener noreferrer">
+            thehotline.org
+          </a>
+        </li>
+        <li>
+          <strong>Poison Control</strong> –{' '}
+          <a className="phone" href="tel:18002221222">
+            1-800-222-1222
+          </a>{' '}
+          |{' '}
+          <a href="https://www.poison.org/" target="_blank" rel="noopener noreferrer">
+            poison.org
           </a>
         </li>
         <li>
