@@ -7,21 +7,12 @@ import { testConfig } from './test.config'
  * logo.spec.ts already checks the homepage and /resources. These tests close
  * the gap for the two pages that previously had zero E2E coverage:
  * /social-workers and /education-career. Each must render the site-name
- * header, its per-page tagline, and the shared sticky nav.
+ * header, its per-page tagline, and the shared sticky nav. Page-specific
+ * values come from test.config.ts (testConfig.directoryPages) so template
+ * customization stays in one place.
  */
 
-const pages = [
-  {
-    path: '/social-workers',
-    tagline: /Free Help from Social Workers/i,
-  },
-  {
-    path: '/education-career',
-    tagline: /Plan Your Future/i,
-  },
-]
-
-for (const { path, tagline } of pages) {
+for (const { path, tagline } of testConfig.directoryPages) {
   test.describe(`directory page ${path}`, () => {
     test('shows the site-name header and per-page tagline', async ({ page }) => {
       await page.goto(path)

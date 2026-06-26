@@ -29,7 +29,8 @@ describe('ResourceCategories', () => {
   })
 
   it('renders a tile for every category', () => {
-    const { container } = render(<ResourceCategories />)
-    expect(container.querySelectorAll('.quick-link').length).toBe(21)
+    render(<ResourceCategories />)
+    // The card renders only the category links, so every link is one tile.
+    expect(screen.getAllByRole('link')).toHaveLength(21)
   })
 })

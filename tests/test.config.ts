@@ -43,6 +43,15 @@ export const testConfig = {
   },
 
   /**
+   * Interior directory pages and their per-page taglines.
+   * Used in: tests/directory-pages.spec.ts
+   */
+  directoryPages: [
+    { path: '/social-workers', tagline: 'Free Help from Social Workers & Family Resources' },
+    { path: '/education-career', tagline: 'Plan Your Future – Education, Training & Careers' },
+  ],
+
+  /**
    * Cookie Consent Configuration
    * Used in: tests/cookie-consent.spec.ts
    */
