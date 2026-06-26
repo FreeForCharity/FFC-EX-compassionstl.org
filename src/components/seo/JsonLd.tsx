@@ -48,6 +48,16 @@ export function buildBreadcrumbSchema(crumbs: readonly Crumb[]): Record<string, 
 }
 
 /**
+ * Serialize a schema object for safe inlining in a <script> tag. Escapes `<`
+ * to its JSON unicode form so a stray `</script>` in any value can never
+ * terminate the script block (HTML-injection guard); the output is still
+ * valid JSON / JSON-LD.
+ */
+export function serializeJsonLd(schema: Record<string, unknown>): string {
+  return JSON.stringify(schema).replace(/</g, '\\u003c')
+}
+
+/**
  * Emits a single <script type="application/ld+json"> block for an arbitrary
  * schema.org object. Server component — no client runtime cost.
  */
@@ -55,7 +65,7 @@ export default function JsonLd({ schema }: { schema: Record<string, unknown> }) 
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }}
     />
   )
 }

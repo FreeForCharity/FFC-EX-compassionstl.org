@@ -3,6 +3,7 @@ import { render } from '@testing-library/react'
 import JsonLd, {
   buildWebSiteSchema,
   buildBreadcrumbSchema,
+  serializeJsonLd,
 } from '../../../src/components/seo/JsonLd'
 import { siteConfig } from '../../../src/lib/site.config'
 
@@ -29,6 +30,15 @@ describe('buildBreadcrumbSchema', () => {
     expect(items[0]).toMatchObject({ '@type': 'ListItem', position: 1, name: 'Home' })
     expect(items[1].position).toBe(2)
     expect(items[1].item as string).toMatch(/^https:\/\/.*\/resources$/)
+  })
+})
+
+describe('serializeJsonLd', () => {
+  it('escapes "<" so a stray </script> cannot break out, yet stays valid JSON', () => {
+    const out = serializeJsonLd({ name: 'evil </script><script>alert(1)' })
+    expect(out).not.toContain('</script>')
+    expect(out).toContain('\\u003c')
+    expect((JSON.parse(out) as { name: string }).name).toBe('evil </script><script>alert(1)')
   })
 })
 

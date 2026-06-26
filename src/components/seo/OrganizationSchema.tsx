@@ -1,6 +1,7 @@
 import React from 'react'
 import { siteConfig, siteUrl } from '@/lib/site.config'
 import { assetPath } from '@/lib/assetPath'
+import { serializeJsonLd } from '@/components/seo/JsonLd'
 
 /**
  * Builds the schema.org NGO JSON-LD object for this site. Pulls every value
@@ -51,10 +52,10 @@ export default function OrganizationSchema() {
   return (
     <script
       type="application/ld+json"
-      // Stable JSON output: stringify with no whitespace to avoid layout
-      // shift and keep the payload small. dangerouslySetInnerHTML is the
+      // Stable JSON output with `<` escaped so a stray `</script>` in any
+      // value can't break out of the block. dangerouslySetInnerHTML is the
       // standard pattern for inline JSON-LD per the Next.js docs.
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }}
     />
   )
 }
