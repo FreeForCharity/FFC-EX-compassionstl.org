@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import ResourceDirectoryPage from '@/components/resource-directory/ResourceDirectoryPage'
+import JsonLd, { buildBreadcrumbSchema } from '@/components/seo/JsonLd'
 import { educationCareerSections } from '@/data/education-career'
 
 export const metadata: Metadata = {
@@ -13,6 +14,14 @@ export default function EducationCareerPage() {
     <ResourceDirectoryPage
       tagline="Plan Your Future – Education, Training & Careers"
       sections={educationCareerSections}
+      breadcrumb={
+        <JsonLd
+          schema={buildBreadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Education & Career', path: '/education-career' },
+          ])}
+        />
+      }
     />
   )
 }

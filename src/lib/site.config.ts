@@ -19,6 +19,17 @@ export type SiteSocialLink = {
 export type SiteConfig = {
   /** Display name of the charity (used in titles, OG/Twitter cards). */
   name: string
+  /**
+   * Other names the org is known by, emitted as schema.org `alternateName`.
+   * Helps search engines map common variants to this entity and disambiguate
+   * it from similarly-named organizations.
+   */
+  alternateName: readonly string[]
+  /**
+   * Primary geographic area served, emitted as schema.org `areaServed`.
+   * Disambiguates this org from same-named orgs in other regions.
+   */
+  areaServed: string
   /** Short tagline used in the default title template. */
   tagline: string
   /** Plain-language description used for the <meta description> tag. */
@@ -60,6 +71,8 @@ export type SiteConfig = {
 
 export const siteConfig: SiteConfig = {
   name: 'CompassionSTL',
+  alternateName: ['Compassion STL', 'CompassionSTL.org'],
+  areaServed: 'St. Louis, Missouri',
   tagline: 'St. Louis Community Resources',
   description:
     'CompassionSTL is a free, all-in-one directory of community resources in St. Louis and Missouri — verified links and phone numbers for food, housing, medical care, mental health, job training, and more.',

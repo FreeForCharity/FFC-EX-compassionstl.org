@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import ResourceDirectoryPage from '@/components/resource-directory/ResourceDirectoryPage'
+import JsonLd, { buildBreadcrumbSchema } from '@/components/seo/JsonLd'
 import { socialWorkerSections } from '@/data/social-workers'
 
 export const metadata: Metadata = {
@@ -13,6 +14,14 @@ export default function SocialWorkersPage() {
     <ResourceDirectoryPage
       tagline="Free Help from Social Workers & Family Resources"
       sections={socialWorkerSections}
+      breadcrumb={
+        <JsonLd
+          schema={buildBreadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Social Worker Services', path: '/social-workers' },
+          ])}
+        />
+      }
     />
   )
 }
