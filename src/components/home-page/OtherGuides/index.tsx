@@ -6,8 +6,8 @@ import Link from 'next/link'
  *
  * Positions CompassionSTL as a curated quick-start that complements (rather
  * than competes with) the established St. Louis directories, and points
- * anyone who actually wanted the similarly-named home-care company at
- * compassionstl.com to the right place. See issue #29.
+ * anyone who actually wanted one of the similarly-named organizations
+ * (compassionstl.com or compassionate-stl.org) to the right place. See #29.
  */
 const OtherGuides = () => {
   return (
