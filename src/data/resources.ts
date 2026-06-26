@@ -1038,7 +1038,8 @@ export const resourceSections: readonly ResourceSection[] = [
           {
             label: 'Peter & Paul Community Services',
             phone: '314-588-7111',
-            links: [{ text: 'Homeless', href: 'https://ppcsinc.org/' }],
+            links: [{ text: 'ppcsinc.org', href: 'https://ppcsinc.org/' }],
+            text: '– Helps people experiencing homelessness (Dial 211 for referral)',
           },
           {
             label: 'Rent Assistance for Single Moms in Missouri',
@@ -1106,11 +1107,6 @@ export const resourceSections: readonly ResourceSection[] = [
             phone: '314-802-0700',
             links: [{ text: 'Programs', href: 'https://www.stpatrickcenter.org/programs' }],
             text: '(food, homeless, jobs, shelter)',
-          },
-          {
-            label: 'St. Peter & Paul',
-            links: [{ text: 'ppcsinc.org', href: 'https://ppcsinc.org/' }],
-            text: '– Helps homeless (Dial 211 for referral)',
           },
           {
             label: 'Supportive Housing Program',

@@ -239,7 +239,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
                 href: 'https://www.slu.edu/news/2026/january/slu-tuition-promise.php',
               },
             ],
-            text: 'Full undergraduate tuition covered',
+            text: '– Full undergraduate tuition covered',
           },
           {
             label: 'Tuition Assistance Former Foster Students',
@@ -249,7 +249,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
                 href: 'https://dss.mo.gov/cd/older-youth-program/tuition-assistance.htm',
               },
             ],
-            text: 'Currently or were in Foster Care',
+            text: '– Currently or were in Foster Care',
           },
           {
             label: 'University of Missouri Columbia Land Grant',
@@ -259,7 +259,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
                 href: 'https://financialaid.missouri.edu/grants/missouri-land-grant/',
               },
             ],
-            text: 'Federal Pell Grant Eligible',
+            text: '– Federal Pell Grant Eligible',
           },
           {
             label: 'Washington University Financial Aid',
@@ -269,7 +269,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
                 href: 'https://financialaid.washu.edu/how-washu-helps/',
               },
             ],
-            text: 'Students whose families make under 75K Program covers tuition, fees, housing, dining, for incoming full-time Missouri & Southern Il. students',
+            text: '– Students whose families make under 75K; program covers tuition, fees, housing, dining, for incoming full-time Missouri & Southern Il. students',
           },
           {
             label: 'Which Colleges Offer Free Tuition',
@@ -721,7 +721,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
             label: 'Higher Education Consortium of Metro St. Louis',
             phone: '314-985-7075',
             links: [{ text: 'HECSTL', href: 'https://www.hecstl.org/' }],
-            text: 'low-income, first-generation college students, disabled support',
+            text: '– Low-income, first-generation college students, disabled support',
           },
           {
             label: 'Information on College Preparation & the Federal Student Aid Programs',
@@ -753,7 +753,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
                 href: 'https://web.dhewd.mo.gov/studentportal/',
               },
             ],
-            text: 'Student Portal',
+            text: '– Student Portal',
           },
           {
             label: 'Missouri Grants & Scholarships',
@@ -833,7 +833,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
             label: 'Harris Stowe State University',
             phone: '314-340-3366',
             links: [{ text: 'hssu.edu', href: 'https://www.hssu.edu/' }],
-            text: 'Scholarship Endowment SIM & G21 Information Technology',
+            text: '– Scholarship Endowment SIM & G21 Information Technology',
           },
           {
             label: 'Low-Income Student Scholarships',
@@ -852,7 +852,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
                 href: 'https://dss.mo.gov/cd/older-youth-program/tuition-assistance.htm',
               },
             ],
-            text: 'Currently or were in Foster Care',
+            text: '– Currently or were in Foster Care',
           },
           {
             label: 'Missouri Grants & Scholarships',
@@ -871,7 +871,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
                 href: 'https://www.scholarships.com/financial-aid/college-scholarships/scholarships-by-state/missouri-scholarships',
               },
             ],
-            text: 'Scroll to bottom of page',
+            text: '– Scroll to bottom of page',
           },
           {
             label: 'Nine Best Scholarship Websites & Search Engines',
@@ -951,7 +951,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
                 href: 'https://www.slu.edu/news/2026/january/slu-tuition-promise.php',
               },
             ],
-            text: 'Full undergraduate tuition covered',
+            text: '– Full undergraduate tuition covered',
           },
           {
             label: 'St. Louis University Undergraduate Scholarships',
@@ -1003,7 +1003,7 @@ export const educationCareerSections: readonly ResourceSection[] = [
                 href: 'https://www.umsl.edu/sfs/scholarships-grants/index.html',
               },
             ],
-            text: 'Federal Pell Grant Eligible',
+            text: '– Federal Pell Grant Eligible',
           },
           {
             label: 'Urban League St. Louis MO',

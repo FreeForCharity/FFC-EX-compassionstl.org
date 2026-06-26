@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import type { ResourceItem, ResourceSection } from '@/data/resource-types'
 
 /** Strip a display phone number down to a dialable tel: target. */
@@ -26,15 +27,18 @@ function ItemContent({ item }: { item: ResourceItem }) {
     )
   }
   for (const [i, link] of (item.links ?? []).entries()) {
+    // Site-relative hrefs go through next/link so the configured basePath is
+    // applied on subpath deployments; external hrefs stay plain anchors.
     parts.push(
-      <a
-        key={`link-${i}`}
-        href={link.href}
-        target={link.href.startsWith('/') ? undefined : '_blank'}
-        rel={link.href.startsWith('/') ? undefined : 'noopener noreferrer'}
-      >
-        {link.text}
-      </a>
+      link.href.startsWith('/') ? (
+        <Link key={`link-${i}`} href={link.href}>
+          {link.text}
+        </Link>
+      ) : (
+        <a key={`link-${i}`} href={link.href} target="_blank" rel="noopener noreferrer">
+          {link.text}
+        </a>
+      )
     )
   }
 

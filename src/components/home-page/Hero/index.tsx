@@ -10,7 +10,7 @@ const Hero = () => {
           Connecting you to help, hope, and a brighter future in St. Louis
         </p>
         <a href="#start" className="cstl-hero-cta">
-          Find Resources ▼
+          Find Resources <span aria-hidden="true">▼</span>
         </a>
       </div>
     </section>
