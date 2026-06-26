@@ -7,6 +7,8 @@ import ResourceCard from './ResourceCard'
 type Props = {
   tagline: string
   sections: readonly ResourceSection[]
+  /** Optional JSON-LD (e.g. a BreadcrumbList) rendered at the top of the page. */
+  breadcrumb?: React.ReactNode
   children?: React.ReactNode
 }
 
@@ -15,9 +17,10 @@ type Props = {
  * structure: header (site name + tagline), sticky nav, then a container of
  * cards.
  */
-export default function ResourceDirectoryPage({ tagline, sections, children }: Props) {
+export default function ResourceDirectoryPage({ tagline, sections, breadcrumb, children }: Props) {
   return (
     <div className="cstl">
+      {breadcrumb}
       <PageHeader tagline={tagline} />
       <SiteNav />
       <div className="container">

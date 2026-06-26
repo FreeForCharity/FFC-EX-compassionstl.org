@@ -19,6 +19,14 @@ export function buildOrganizationSchema(): Record<string, unknown> {
     logo: siteUrl(assetPath('/web-app-manifest-512x512.png')),
   }
 
+  if (siteConfig.alternateName.length > 0) {
+    schema.alternateName = [...siteConfig.alternateName]
+  }
+
+  if (siteConfig.areaServed) {
+    schema.areaServed = { '@type': 'AdministrativeArea', name: siteConfig.areaServed }
+  }
+
   if (sameAs.length > 0) {
     schema.sameAs = sameAs
   }

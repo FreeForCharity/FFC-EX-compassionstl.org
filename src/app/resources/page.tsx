@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import ResourceDirectoryPage from '@/components/resource-directory/ResourceDirectoryPage'
+import JsonLd, { buildBreadcrumbSchema } from '@/components/seo/JsonLd'
 import { resourceSections } from '@/data/resources'
 
 export const metadata: Metadata = {
@@ -14,6 +15,14 @@ export default function ResourcesPage() {
     <ResourceDirectoryPage
       tagline="Complete Community Resource Directory"
       sections={resourceSections}
+      breadcrumb={
+        <JsonLd
+          schema={buildBreadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'All Resources', path: '/resources' },
+          ])}
+        />
+      }
     >
       <p style={{ marginTop: '1.5rem' }}>
         If you need one-on-one help, contact a{' '}
