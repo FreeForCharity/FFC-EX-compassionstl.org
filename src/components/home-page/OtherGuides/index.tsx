@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 /**
  * "More St. Louis Resource Guides" + a disambiguation note.
@@ -49,7 +50,7 @@ const OtherGuides = () => {
               slcl.libguides.com
             </a>{' '}
             – librarian-curated guides, plus the free{' '}
-            <a href="/social-workers">Book a Social Worker</a> service.
+            <Link href="/social-workers">Book a Social Worker</Link> service.
           </li>
           <li>
             <strong>City of St. Louis – Help Resources</strong> –{' '}
