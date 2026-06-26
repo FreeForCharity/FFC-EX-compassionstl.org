@@ -4,6 +4,7 @@ import Mission from '@/components/home-page/Mission'
 import ResourceCategories from '@/components/home-page/ResourceCategories'
 import EmergencyHelp from '@/components/home-page/EmergencyHelp'
 import HowToUse from '@/components/home-page/HowToUse'
+import OtherGuides from '@/components/home-page/OtherGuides'
 import SiteNav from '@/components/site/SiteNav'
 
 const index = () => {
@@ -16,6 +17,7 @@ const index = () => {
         <ResourceCategories />
         <EmergencyHelp />
         <HowToUse />
+        <OtherGuides />
       </div>
     </div>
   )
