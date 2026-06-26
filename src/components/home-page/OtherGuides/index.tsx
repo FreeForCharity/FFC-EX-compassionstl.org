@@ -86,18 +86,31 @@ const OtherGuides = () => {
 
       <div className="card" id="not-us">
         <h2>
-          <span aria-hidden="true">🏠 </span>Looking for in-home senior care?
+          <span aria-hidden="true">🤝 </span>Looking for a different organization?
         </h2>
         <p>
           You&apos;re on <strong>CompassionSTL</strong> (<strong>compassionstl.org</strong>) — a
-          free community resource directory. If you were looking for{' '}
-          <strong>Compassionate Nursing Services</strong> at{' '}
-          <a href="https://www.compassionstl.com/" target="_blank" rel="noopener noreferrer">
-            compassionstl.com
-          </a>{' '}
-          (note the <strong>.com</strong>), that&apos;s a separate, unaffiliated home-care company
-          offering personal, companion, dementia, and respite care for older adults in St. Louis.
+          free community resource directory. A couple of similarly named St. Louis organizations are{' '}
+          <strong>not affiliated</strong> with us:
         </p>
+        <ul className="list-bullet">
+          <li>
+            <strong>Compassionate Nursing Services</strong> –{' '}
+            <a href="https://www.compassionstl.com/" target="_blank" rel="noopener noreferrer">
+              compassionstl.com
+            </a>{' '}
+            (note the <strong>.com</strong>) – a home-care company offering personal, companion,
+            dementia, and respite care for older adults in St. Louis.
+          </li>
+          <li>
+            <strong>Compassionate St. Louis</strong> –{' '}
+            <a href="https://www.compassionate-stl.org/" target="_blank" rel="noopener noreferrer">
+              compassionate-stl.org
+            </a>{' '}
+            – a nonprofit promoting compassion and empathy across the St. Louis region through
+            education and community programs.
+          </li>
+        </ul>
       </div>
     </>
   )
