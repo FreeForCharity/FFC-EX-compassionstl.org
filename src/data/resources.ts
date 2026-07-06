@@ -2169,6 +2169,16 @@ export const resourceSections: readonly ResourceSection[] = [
             ],
           },
           {
+            label: 'Criminal Justice Ministry',
+            phone: '314-652-8062',
+            links: [
+              {
+                text: 'Stability starts with housing. Reentry starts here.',
+                href: 'https://www.cjmstlouis.org/',
+              },
+            ],
+          },
+          {
             label: 'Ex-Offender Resources',
             links: [
               {
