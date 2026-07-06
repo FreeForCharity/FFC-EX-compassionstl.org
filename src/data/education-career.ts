@@ -1215,10 +1215,10 @@ export const educationCareerSections: readonly ResourceSection[] = [
             ],
           },
           {
-            label: 'Top 32 Scholarships for Adults',
+            label: 'Top 26 Scholarships for Adults',
             links: [
               {
-                text: 'Top 30 Scholarships',
+                text: 'Top 26 Scholarships',
                 href: 'https://scholarships360.org/scholarships/scholarships-for-adults/',
               },
             ],
