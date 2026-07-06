@@ -2422,6 +2422,12 @@ export const resourceSections: readonly ResourceSection[] = [
           {
             label: 'St. Louis City Human Services (Aging)',
             phone: '314-612-5918',
+            links: [
+              {
+                text: 'Information',
+                href: 'https://www.stlouis-mo.gov/government/departments/human-services/aging-services/index.cfm',
+              },
+            ],
           },
           {
             label: 'St. Louis County Older Residents Programs',
