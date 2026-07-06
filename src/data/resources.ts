@@ -2975,6 +2975,16 @@ export const resourceSections: readonly ResourceSection[] = [
             text: '– Free tech training & development to young adult job seekers in St. Louis & Kansas City',
           },
           {
+            label: 'St. Louis Society for the Blind and Visually Impaired',
+            phone: '314-968-9000',
+            links: [
+              {
+                text: 'Assistive Technology',
+                href: 'https://www.slsbvi.org/assistive-technology/',
+              },
+            ],
+          },
+          {
             label: 'STLCC Tech Academy',
             links: [
               {
