@@ -27,14 +27,14 @@ Always verify hours, phone numbers, and eligibility directly with each organizat
 ## Development
 
 ```bash
-npm install        # install dependencies
-npm run dev        # local dev server
-npm run format     # prettier
-npm run lint       # eslint
-npm run check:drift # FFC best-practice checks (kebab-case routes, secrets, CSP sync)
-npm test           # unit tests (jest)
-npm run build      # static export to ./out
-npm run test:e2e   # Playwright end-to-end tests
+pnpm install        # install dependencies
+pnpm run dev        # local dev server
+pnpm run format     # prettier
+pnpm run lint       # eslint
+pnpm run check:drift # FFC best-practice checks (kebab-case routes, secrets, CSP sync)
+pnpm test           # unit tests (jest)
+pnpm run build      # static export to ./out
+pnpm run test:e2e   # Playwright end-to-end tests
 ```
 
 The site is a static Next.js (App Router) export deployed to GitHub Pages via `.github/workflows/deploy.yml`.

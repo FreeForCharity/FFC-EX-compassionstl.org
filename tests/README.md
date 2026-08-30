@@ -10,16 +10,16 @@ This directory contains the end-to-end (E2E) tests that validate the CompassionS
 
 ```bash
 # Build the site first
-npm run build
+pnpm run build
 
 # Run tests
-npm run test:e2e
+pnpm run test:e2e
 
 # Run tests with UI (interactive)
-npm run test:e2e:ui
+pnpm run test:e2e:ui
 
 # Run tests in headed mode (see browser)
-npm run test:e2e:headed
+pnpm run test:e2e:headed
 ```
 
 ## Test Configuration
@@ -77,8 +77,8 @@ These tests use values from `test.config.ts`:
 
 If tests continue to fail after updating the configuration:
 
-1. Run tests with UI to see what's happening: `npm run test:e2e:ui`
-2. Check the Playwright HTML report: `npx playwright show-report`
+1. Run tests with UI to see what's happening: `pnpm run test:e2e:ui`
+2. Check the Playwright HTML report: `pnpm exec playwright show-report`
 3. Review the test file to understand what it's checking
 4. Verify your page content matches the test expectations
 
