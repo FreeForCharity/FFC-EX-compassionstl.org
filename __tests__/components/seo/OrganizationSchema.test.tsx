@@ -21,6 +21,15 @@ describe('OrganizationSchema', () => {
     expect(schema.logo as string).toMatch(/^https:\/\//)
   })
 
+  it('includes alternateName and areaServed for disambiguation', () => {
+    const schema = buildOrganizationSchema()
+    expect(schema.alternateName).toEqual([...siteConfig.alternateName])
+    expect(schema.areaServed).toEqual({
+      '@type': 'AdministrativeArea',
+      name: siteConfig.areaServed,
+    })
+  })
+
   it('includes social profiles as sameAs when configured', () => {
     const schema = buildOrganizationSchema()
     if (siteConfig.social.some((s) => s.href.trim().length > 0)) {

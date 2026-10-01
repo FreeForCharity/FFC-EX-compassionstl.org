@@ -1,13 +1,13 @@
 import React from 'react'
-// import HomePage from './Home/page'
 import HomePage from '@/app/home-page'
 import OrganizationSchema from '@/components/seo/OrganizationSchema'
+import JsonLd, { buildWebSiteSchema } from '@/components/seo/JsonLd'
 
 const page = () => {
   return (
     <div>
       <OrganizationSchema />
-      {/* <HomePage /> */}
+      <JsonLd schema={buildWebSiteSchema()} />
       <HomePage />
     </div>
   )

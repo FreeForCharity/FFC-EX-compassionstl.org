@@ -2,55 +2,38 @@ import { test, expect } from '@playwright/test'
 import { testConfig } from './test.config'
 
 /**
- * Logo and Image Visibility Tests
+ * Branding & Navigation Tests
  *
- * These tests verify that critical images are present and visible on the homepage:
- * 1. Header logo (top left corner) - validates the organization branding
- * 2. Hero section image - validates the decorative hero image is displayed
+ * These tests verify that the site branding is present on the homepage:
+ * the hero carries the site name and tagline, and the sticky nav links
+ * to every page of the site.
  *
  * Note: Test expectations use values from test.config.ts for easy customization
  */
 
-test.describe('Logo and Image Visibility', () => {
-  test('should display logo in header', async ({ page }) => {
-    // Navigate to the homepage
+test.describe('Branding and navigation', () => {
+  test('hero shows the site name and tagline', async ({ page }) => {
     await page.goto('/')
 
-    // Find the logo in the Header
-    // The logo is in a Link element that points to "/" with img alt text
-    const headerLogo = page.locator(`header a[href="/"] img[alt="${testConfig.logo.headerAlt}"]`)
-
-    // Verify the logo exists
-    await expect(headerLogo).toBeVisible()
-
-    // Verify the logo has the correct alt text
-    await expect(headerLogo).toHaveAttribute('alt', testConfig.logo.headerAlt)
+    const heading = page.getByRole('heading', { level: 1, name: testConfig.branding.siteName })
+    await expect(heading).toBeVisible()
+    await expect(page.getByText(testConfig.branding.heroSubtitle)).toBeVisible()
   })
 
-  test('should display hero section image', async ({ page }) => {
-    // Navigate to the homepage
+  test('nav contains links to every page', async ({ page }) => {
     await page.goto('/')
 
-    // Find the hero image
-    const heroImage = page.locator(`img[alt="${testConfig.logo.heroAlt}"]`)
-
-    // Verify the image exists
-    await expect(heroImage).toBeVisible()
-
-    // Verify the image has the correct alt text
-    await expect(heroImage).toHaveAttribute('alt', testConfig.logo.heroAlt)
+    const nav = page.getByRole('navigation')
+    for (const label of testConfig.branding.navLinks) {
+      await expect(nav.getByRole('link', { name: label })).toBeVisible()
+    }
   })
 
-  test('both header logo and hero image should be present on the same page', async ({ page }) => {
-    // Navigate to the homepage
-    await page.goto('/')
+  test('interior pages show the site name header', async ({ page }) => {
+    await page.goto('/resources')
 
-    // Find both images
-    const headerLogo = page.locator(`header a[href="/"] img[alt="${testConfig.logo.headerAlt}"]`)
-    const heroImage = page.locator(`img[alt="${testConfig.logo.heroAlt}"]`)
-
-    // Verify both are visible simultaneously
-    await expect(headerLogo).toBeVisible()
-    await expect(heroImage).toBeVisible()
+    await expect(
+      page.getByRole('heading', { level: 1, name: testConfig.branding.siteName })
+    ).toBeVisible()
   })
 })

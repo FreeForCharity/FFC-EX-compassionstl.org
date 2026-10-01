@@ -6,53 +6,57 @@ import Footer from '../../src/components/footer'
 // Extend Jest matchers
 expect.extend(toHaveNoViolations)
 
+// The footer line is chosen per pathname, matching the source site.
+const mockUsePathname = jest.fn(() => '/')
+jest.mock('next/navigation', () => ({
+  usePathname: () => mockUsePathname(),
+}))
+
 describe('Footer component', () => {
+  beforeEach(() => {
+    mockUsePathname.mockReturnValue('/')
+  })
+
   it('should render the footer', () => {
     render(<Footer />)
-    const footer = screen.getByRole('contentinfo')
-    expect(footer).toBeInTheDocument()
+    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
   })
 
-  it('should display Endorsements section', () => {
-    render(<Footer />)
-    expect(screen.getByText('Endorsements')).toBeInTheDocument()
-  })
-
-  it('should display Quick Links section', () => {
-    render(<Footer />)
-    expect(screen.getByText('Quick Links')).toBeInTheDocument()
-  })
-
-  it('should display Contact Us section with contact information', () => {
-    render(<Footer />)
-    expect(screen.getByText('Contact Us')).toBeInTheDocument()
-  })
-
-  it('should have social media links', () => {
-    render(<Footer />)
-    // Check for social media links by their aria-labels or visible text
-    const links = screen.getAllByRole('link')
-    expect(links.length).toBeGreaterThan(0)
-  })
-
-  it('should display the current year in copyright', () => {
+  it('shows the homepage line with the current year and 911 notice', () => {
     render(<Footer />)
     const currentYear = new Date().getFullYear()
-    expect(screen.getByText(new RegExp(currentYear.toString()))).toBeInTheDocument()
+    expect(screen.getByText(new RegExp(`© ${currentYear}`))).toBeInTheDocument()
+    expect(screen.getByText(/Connecting neighbors with care/)).toBeInTheDocument()
+    expect(screen.getByText(/For emergencies, call 911\./)).toBeInTheDocument()
   })
 
-  it('should have GuideStar profile link', () => {
+  it.each([
+    ['/resources', /Resources compiled from community agencies/],
+    ['/social-workers', /Building a network of care/],
+    ['/education-career', /Empowering your future/],
+    ['/disclaimer', /Use information wisely/],
+  ])('shows the %s page line', (path, expected) => {
+    mockUsePathname.mockReturnValue(path)
     render(<Footer />)
-    const guidestarLink = screen.getByText(/GuideStar Profile/i)
-    expect(guidestarLink).toBeInTheDocument()
+    expect(screen.getByText(expected)).toBeInTheDocument()
   })
 
-  it('should have email contact link', () => {
+  it('falls back to the homepage line on other routes', () => {
+    mockUsePathname.mockReturnValue('/privacy-policy')
     render(<Footer />)
-    // Look for email link
-    const links = screen.getAllByRole('link')
-    const emailLink = links.find((link) => link.getAttribute('href')?.includes('mailto:'))
-    expect(emailLink).toBeDefined()
+    expect(screen.getByText(/Connecting neighbors with care/)).toBeInTheDocument()
+  })
+
+  it('links to Free For Charity and the GitHub repository', () => {
+    render(<Footer />)
+    expect(screen.getByRole('link', { name: 'Free For Charity' })).toHaveAttribute(
+      'href',
+      'https://freeforcharity.org'
+    )
+    expect(screen.getByRole('link', { name: 'Source code on GitHub' })).toHaveAttribute(
+      'href',
+      'https://github.com/FreeForCharity/FFC-EX-compassionstl.org'
+    )
   })
 
   it('should not have accessibility violations', async () => {
