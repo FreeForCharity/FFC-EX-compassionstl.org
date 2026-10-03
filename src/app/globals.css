@@ -341,6 +341,24 @@ body {
   opacity: 0.85;
 }
 
+/* The Cookie Preferences control is a button (it opens the consent modal
+   rather than navigating), styled to read exactly like the credit links. */
+.cstl-footer-cookie-prefs {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cstl-footer-cookie-prefs:hover,
+.cstl-footer-cookie-prefs:focus-visible {
+  opacity: 0.85;
+}
+
 /* Responsive adjustments (from the source stylesheet) */
 @media (max-width: 768px) {
   .cstl-hero {

@@ -52,7 +52,19 @@ const Footer: React.FC = () => {
           rel="noopener noreferrer"
         >
           Source code on GitHub
-        </a>
+        </a>{' '}
+        |{' '}
+        {/* Persistent consent re-entry point (withdrawing consent must stay
+            as easy as giving it): reopens the preferences modal the
+            cookie-consent banner registers on window. */}
+        <button
+          type="button"
+          aria-haspopup="dialog"
+          className="cstl-footer-cookie-prefs"
+          onClick={() => window.openCookiePreferences?.()}
+        >
+          Cookie Preferences
+        </button>
       </p>
     </footer>
   )
